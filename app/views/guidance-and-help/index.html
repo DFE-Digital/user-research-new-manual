@@ -1,0 +1,28 @@
+{% extends "layouts/content-with-sidenav.html" %}
+
+{% set selectedNav = "Guidance and help" %}
+{% set pageName = "Guidance and help" %}
+{% set pageDescription = "Lorem ipsum dolor sit amet." %}
+
+{% block content %}
+
+{% markdown %}
+
+<!-- main page content starts here -->
+
+## You can write in markdown
+
+- Bullet 1
+- Bullet 2
+
+<h2 class="govuk-heading-l">Or mix it up with HTML</h2>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>Bullet 1</li>
+  <li>Bullet 2</li>
+</ul>
+
+
+{% endmarkdown%}
+
+{% endblock %}

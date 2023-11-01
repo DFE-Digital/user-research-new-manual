@@ -1,0 +1,68 @@
+{% extends "layouts/content-full-width.html" %}
+
+{% set selectedNav = "Home" %}
+{% set pageName = "Layouts, components and style guide" %}
+{% set pageDescription = "Examples of layouts and available components, and the tone of voice style guide for this manual." %}
+
+{% block content %}
+
+{% markdown %}
+{% endmarkdown%}
+
+<section style="background: #ebf2f6;">
+  <div class="dfe-width-container" style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">{{pageName}}</h1>
+        <p class="govuk-body-l govuk-!-margin-bottom-0">{{pageDescription}}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="" style="background: #ffffff;">
+  <div class="dfe-width-container" style="padding: 40px 0px 0 0px">
+  </div>
+</section>
+
+<section class="" style="background: #ffffff;">
+  <div class="dfe-width-container" style="padding: 00px 0px 80px 0px">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <h2 class="govuk-heading-l">Example layouts, components and content style guide</h2>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+
+        <ul class="dfemanual-cta-cards dfemanual-cta-cards--half ">
+          <li class="card">
+            <h3>Content full width</h3>
+            <p>Layout allowing a <a class="govuk-link govuk-link--no-visited-state" href="content-full-width.html">full width page with no navigation</a>.</p>
+          </li>
+          <li class="card">
+            <h3>Content with sidenav</h3>
+            <p>Layout for the <a class="govuk-link govuk-link--no-visited-state" href="content-with-sidenav.html">standard content page with left-hand menu</a>.</p>
+          </li>
+          <li class="card">
+            <h3>Content with sidenav on right</h3>
+            <p>Layout for a <a class="govuk-link govuk-link--no-visited-state" href="content-with-sidenav-right.html">content page with no left menu, and a right column for additional content</a>.</p>
+          </li>
+          <li class="card">
+            <h3>Example components</h3>
+            <p>Examples of some <a class="govuk-link govuk-link--no-visited-state" href="components.html">available components and guidelines for use</a>.</p>
+          </li>
+          <li class="card">
+            <h3>Content style guide</h3>
+            <p>The <a class="govuk-link govuk-link--no-visited-state" href="tone-of-voice.html">tone of voice we use in this UR manual</a>.</p>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% endblock %}

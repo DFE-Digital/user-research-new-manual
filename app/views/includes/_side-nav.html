@@ -1,0 +1,558 @@
+{% set about_ur_at_dfe = [
+  {
+    title: "About the user research profession at Department for Education",
+    url: "/about-ur-at-dfe/"
+  },{
+    title: "Information for new starters",
+    url: "/about-ur-at-dfe/new-starters/"
+  },{
+    title: "Community of practice",
+    url: "/about-ur-at-dfe/community-of-practice/"
+  }
+] %}
+{% set about_ur_at_dfe__career_development = [
+  {
+    title: "Becoming a user researcher at DfE",
+    url: "/about-ur-at-dfe/career-development/becoming-a-ur-at-dfe.html"
+  },{
+    title: "UR roles and capability framework",
+    url: "/about-ur-at-dfe/career-development/roles-and-capability-framework.html"
+  },{
+    title: "Profession management and mentoring",
+    url: "/about-ur-at-dfe/career-development/profession-management-and-mentoring.html"
+  },{
+    title: "ABLE objectives",
+    url: "/about-ur-at-dfe/career-development/able-objectives.html"
+  },{
+    title: "Training and online resources",
+    url: "/about-ur-at-dfe/career-development/training-and-online-resources.html"
+  }
+] %}
+{% set about_ur_at_dfe__working_with_ur_in_team = [
+  {
+    title: "Recruiting a user researcher for your team",
+    url: "/about-ur-at-dfe/working-with-a-ur-in-your-team/recruiting-a-user-researcher.html"
+  },{
+    title: "Contractors and statements of work",
+    url: "/about-ur-at-dfe/working-with-a-ur-in-your-team/contractors-and-statements-of-work.html"
+  },{
+    title: "What user researchers need to work effectively",
+    url: "/about-ur-at-dfe/working-with-a-ur-in-your-team/what-user-researchers-need-to-work-effectively.html"
+  },{
+    title: "Observing user research",
+    url: "/about-ur-at-dfe/working-with-a-ur-in-your-team/observing-user-research.html"
+  }
+] %}
+
+
+{% set standards_and_principles = [
+  {
+    title: "User research standards and principles",
+    url: "/standards-and-principles/"
+  },{
+    title: "Our community principles for delivering user research",
+    url: "/standards-and-principles/our-community-principles/"
+  }
+] %}
+{% set standards_and_principles__standards = [
+  {
+    title: "Inclusive research",
+    url: "/standards-and-principles/inclusive-research/"
+  },
+  {
+    title: "Participant recruitment",
+    url: "/standards-and-principles/participant-recruitment/"
+  },
+  {
+    title: "Research planning",
+    url: "/standards-and-principles/research-planning/"
+  },
+  {
+    title: "Researcher safety",
+    url: "/standards-and-principles/researcher-safety/"
+  },
+  {
+    title: "Safeguarding research participants",
+    url: "/standards-and-principles/safeguarding-research-particpants/"
+  },
+  {
+    title: "Secure handling of participant data",
+    url: "/standards-and-principles/secure-handling-of-particpant-data/"
+  }
+] %}
+
+
+{% set guidance_and_help = [
+  {
+    title: "Guidance and help",
+    url: "/guidance-and-help/"
+  }
+] %}
+{% set guidance_and_help__ethics_safeguarding = [
+  {
+    title: "Gaining informed consent",
+    url: "/guidance-and-help/ethics-and-safeguarding/gaining-informed-consent.html"
+  },{
+    title: "Participant safeguarding",
+    url: "/guidance-and-help/ethics-and-safeguarding/participant-safeguarding.html"
+  },{
+    title: "Reducing burden on DfE's users",
+    url: "/guidance-and-help/ethics-and-safeguarding/reducing-burden-on-dfes-users.html"
+  },{
+    title: "Research with children and young people",
+    url: "/guidance-and-help/ethics-and-safeguarding/research-with-children-and-young-people.html"
+  },{
+    title: "Research with internal users",
+    url: "/guidance-and-help/ethics-and-safeguarding/research-with-internal-users.html"
+  },{
+  title: "Using social media in user research",
+    url: "/guidance-and-help/ethics-and-safeguarding/using-social-media-in-user-research.html"
+  }
+] %}
+{% set guidance_and_help__civil_service = [
+  {
+    title: "User research in the civil service",
+    url: "/guidance-and-help/user-research-in-the-civil-service/"
+  },{
+    title: "Managing participant data under UK GDPR",
+    url: "/guidance-and-help/user-research-in-the-civil-service/researching-in-pre-election-periods.html"
+  }
+] %}
+{% set guidance_and_help__data_management = [
+  {
+    title: "Managing participant data under UK GDPR",
+    url: "/guidance-and-help/managing-participant-data-under-uk-gdpr/"
+  },{
+    title: "Other pages tbc",
+    url: "/guidance-and-help/inclusive-research/"
+  }
+] %}
+{% set guidance_and_help__recruiting_particpants = [
+  {
+    title: "Pages tbc",
+    url: "/guidance-and-help/recruiting-participants/"
+  }
+] %}
+{% set guidance_and_help__inclusive_research = [
+  {
+  title: "Inclusive research",
+    url: "/guidance-and-help/inclusive-research/"
+  }
+] %}
+
+
+{% set templates_and_tools = [
+  {
+    title: "Templates, examples and resources library",
+    url: "/templates-and-tools/templates_examples_and_resources_library/"
+  },{
+    title: "Specialist software and hardware",
+    url: "/templates-and-tools/specialist-software-and-hardware/"
+  },{
+    title: "Using third-party research labs",
+    url: "/templates-and-tools/using-third-party-research-labs/"
+  }
+] %}
+
+
+
+
+<nav class="dfe-vertical-nav">
+
+  {%- if selectedNav === "About UR at DfE" %}
+
+  <ul class="dfe-vertical-nav__section">
+    {% for item in about_ur_at_dfe %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2 class="dfe-vertical-nav--section-header">Developing your user research career at DfE</h2>
+  <ul class="dfe-vertical-nav__section">
+    {% for item in about_ur_at_dfe__career_development %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2 class="dfe-vertical-nav--section-header">Working with a user researcher in your team</h2>
+  <ul class="dfe-vertical-nav__section">
+    {% for item in about_ur_at_dfe__working_with_ur_in_team %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% endif %}
+
+  {%- if selectedNav == "Standards and principles" %}
+    
+    <ul class="dfe-vertical-nav__section">
+      {% for item in standards_and_principles %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="dfe-vertical-nav--section-header">DfE's user research standards</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in standards_and_principles__standards %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% endif %}
+
+  {%- if selectedNav == "Guidance and help" %}
+    <ul class="dfe-vertical-nav__section">
+      {% for item in guidance_and_help %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="dfe-vertical-nav--section-header">Ethical research and safeguarding</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in guidance_and_help__ethics_safeguarding %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="dfe-vertical-nav--section-header">Recruiting participants</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in guidance_and_help__recruiting_particpants %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="dfe-vertical-nav--section-header">Managing participant data under UK GDPR</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in guidance_and_help__data_management %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="dfe-vertical-nav--section-header">Inclusive research</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in guidance_and_help__inclusive_research %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="dfe-vertical-nav--section-header">User research in the civil service</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in guidance_and_help__civil_service %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+
+  {% endif %}
+
+  {%- if selectedNav == "Templates and tools" %}
+    <ul class="dfe-vertical-nav__section">
+      {% for item in templates_and_tools %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% endif %}
+
+  <!-- -------------------------------------------------------------------------------------- -->
+
+
+
+
+  {%- if selectedNav == "Profession and Community" %}
+     <h2 class="govuk-heading-m">Profession and Community</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in professions %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    
+
+  {% endif %}
+
+
+  {%- if selectedNav == "Design system" and isChildSection !== "true"%}
+    <ul class="dfe-vertical-nav__section">
+      {% for item in ds_design %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="dfe-vertical-nav--section-header">Other design systems</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in ds_services %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <h2 class="dfe-vertical-nav--section-header">Prototyping</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in ds_prototyping %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <h2 class="dfe-vertical-nav--section-header">Documentation</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in docs %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% endif %}
+
+
+  {%- if parentSection == "Components" and isChildSection == "true"%}
+
+  <a href="/design-system/" class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-9">Design system</a>
+
+ <h2 class="dfe-vertical-nav--section-header">Components</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in list_components %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+
+   {%- if parentSection == "Styles" and isChildSection == "true"%}
+
+  <a href="/design-system/" class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-9">Design system</a>
+
+ <h2 class="dfe-vertical-nav--section-header">Styles</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in list_styles %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+
+   {%- if parentSection == "Patterns" and isChildSection == "true"%}
+
+  <a href="/design-system/" class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-9">Design system</a>
+
+ <h2 class="dfe-vertical-nav--section-header">Patterns</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in list_patterns %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+
+  {%- if parentSection == "ncs-design-system" and isChildSection == "true" and ncs_hide_parent_nav !=="true" %}
+
+  
+<a href="/design-system/" class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-9">DfE design system</a>
+  <h2 class="dfe-vertical-nav--section-header">How we work</h2>
+  <ul class="dfe-vertical-nav__section">
+    {% for item in ncs_design_guidance %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  
+ <h2 class="dfe-vertical-nav--section-header">Design</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in ncs_design_system %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {%- if ncs_sub_nav == "true"%}
+
+  <a href="/design-system/ncs-design-system/" class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-9">National Careers Service design system</a>
+  <h2 class="dfe-vertical-nav--section-header">How we work</h2>
+  <ul class="dfe-vertical-nav__section">
+    {% for item in ncs_design_guidance %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  
+ <h2 class="dfe-vertical-nav--section-header">Design</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in ncs_design_system %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {%- if ncs_branding_main_nav == "true"%}
+
+  <a href="/design-system/ncs-design-system/" class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-9">National Careers Service design system</a>
+  <h2 class="dfe-vertical-nav--section-header">Brand styles</h2>
+  <ul class="dfe-vertical-nav__section">
+    {% for item in ncs_design_system_branding_guidelines %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  
+  {%- if ncs_branding_nav == "true"%}
+
+  <a href="/design-system/ncs-design-system/branding-guidelines" class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-9">Brand styles</a>
+  <h2 class="dfe-vertical-nav--section-header">Brand styles</h2>
+  <ul class="dfe-vertical-nav__section">
+    {% for item in ncs_design_system_branding_guidelines %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {%- if ncs_components_main_nav == "true"%}
+
+  
+  <a href="/design-system/ncs-design-system" class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-9">National Careers Service design system</a>
+    <h2 class="dfe-vertical-nav--section-header">Navigation</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in ncs_design_system_components %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  
+    <h2 class="dfe-vertical-nav--section-header">Form elements</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in ncs_design_system_form_elements %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  
+    <h2 class="dfe-vertical-nav--section-header">Content presentation</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in ncs_design_system_content_presentation %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  
+    
+    {% endif %}
+
+  {%- if ncs_components_nav == "true"%}
+
+  
+<a href="/design-system/ncs-design-system/components" class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-9">Components</a>
+  <h2 class="dfe-vertical-nav--section-header">Navigation</h2>
+  <ul class="dfe-vertical-nav__section">
+    {% for item in ncs_design_system_components %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2 class="dfe-vertical-nav--section-header">Form elements</h2>
+  <ul class="dfe-vertical-nav__section">
+    {% for item in ncs_design_system_form_elements %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2 class="dfe-vertical-nav--section-header">Content presentation</h2>
+  <ul class="dfe-vertical-nav__section">
+    {% for item in ncs_design_system_content_presentation %}
+      <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+        <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  
+  {% endif %}
+
+
+  
+
+
+
+    {%- if selectedNav == "Accessibility" %}
+    <ul class="dfe-vertical-nav__section">
+      {% for item in accessibility %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+     <h2 class="dfe-vertical-nav--section-header">Understanding WCAG</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in accessibility_wcag %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <h2 class="dfe-vertical-nav--section-header">Audits and assurance</h2>
+    <ul class="dfe-vertical-nav__section">
+      {% for item in accessibility_assurance_top_level %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% endif %}
+
+</nav>
+

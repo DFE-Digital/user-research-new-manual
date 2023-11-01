@@ -1,0 +1,41 @@
+{% extends "layouts/content-with-sidenav.html" %}
+
+{% set selectedNav = "About UR at DfE" %}
+{% set pageName = "About the user research profession at Department for Education" %}
+{% set pageDescription = "Lorem ipsum dolor sit amet." %}
+
+{% block content %}
+
+{% markdown %}
+
+<!-- main page content starts here -->
+
+<section class="dfe-width-container" style="padding: 0px 0px 0px 0px">
+  <div class="govuk-!-margin-top-0" style="background: #f8bc5e; border-radius: 8px;">
+    <div class="dfe-width-container" style="padding: 40px 30px;">
+       <div class="govuk-grid-row">
+           <div class="govuk-grid-column-two-thirds">
+             <h2 class="govuk-heading-m govuk-!-margin-bottom-6">Our mission patch</h2>
+             <p>If you're a DfE user researcher, civil servant or contractor, you can get a mission patch sticker to proudly stick on your laptop.</p>
+             <p>Our UR community designed this sticker to represent us: otters are collaborative, adaptable, effective as individuals but also have a strong sense of community.</p>
+             <p>You can get your sticker from the <a href="/about-ur-at-dfe/community-of-practice/">community lead in your office</a> or contact Tom Adams to send you one in the post</p>
+          </div>
+          <div class="govuk-grid-column-one-third">
+          </div>
+       </div>
+    </div>
+  </div>
+</section>
+
+
+<h2 class="govuk-heading-l">Or mix it up with HTML</h2>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>Bullet 1</li>
+  <li>Bullet 2</li>
+</ul>
+
+
+{% endmarkdown%}
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layouts/content-with-sidenav.html" %}
+
+{% set selectedNav = "Home" %}
+{% set pageName = "Style guide" %}
+{% set pageDescription = "Lorem ipsum dolor sit amet." %}
+
+{% block content %}
+
+{% markdown %}
+
+## Content style guide
+
+- We speak to the reader ("you should" not "user researchers should"). This normally means we're speaking directly to user researchers, although sometimes it might be other DfE team members
+- We don't repeat what DfE is saying elsewhere (e.g. link to a relevant page on the intranet, rather than repeating or paraphrasing it)
+- We don't simply repeat or paraphrase GOV.UK content, we link to it - unless we're adding extra context or information (while linking to the original GOV.UK content)
+- If content is still in development or in beta, we clearly state this
+- [To be confirmed] We open all links in the same browser tab (i.e. don't use target=“_blank”) except for opening Slack channels and otherwise taking users out of the browser.
+
+## Words we use
+
+- When talking about the people who take part in user research, we call them 'participants' or 'research participants', not 'users'
+- When talking in general about the people who use our services, or are impacted by our policies, we can call them 'users', 'service users', 'people impacted by our policies', or 'the users of our services and policies'
+- It's OK to use the shorthand 'DfE' instead of 'Department for Education'
+- We follow the <a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GDS content style guide</a>
+
+{% endmarkdown%}
+
+{% endblock %}

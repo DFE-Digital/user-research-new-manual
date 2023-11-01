@@ -1,0 +1,111 @@
+{% extends "layouts/content-with-sidenav-right.html" %}
+
+{% set selectedNav = "Standards and principles" %}
+{% set pageName = "Participant safeguarding in user research" %}
+{% set pageDescription = "As a user researcher at DfE, you must ensure you are safeguarding your research participants." %}
+
+{% set lastUpdated = "1 October 2023" %}
+{% set publishStatus = "Published" %}
+{% set tagColour = "green" %}
+<!-- tag should be green for Published, yellow for Draft -->
+
+{% block heroExtra %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <h2 class="govuk-heading-s" style="margin-bottom:10px;">Status</h2>
+      <strong class="govuk-tag govuk-tag--{{tagColour}}">{{publishStatus}}</strong>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <h2 class="govuk-heading-s" style="margin-bottom:10px;">Last updated</h2>
+      <strong class="govuk-tag govuk-tag--{{tagColour}}">{{lastUpdated | date('D MMM YYYY')}}</strong>
+    </div>
+  </div>
+
+{% endblock%}
+
+
+{% block content %}
+
+{% markdown %}
+
+
+    <p>Safeguarding is the protection of a person’s health, wellbeing, and right to live in safety, free from harm, abuse and neglect.</p>
+    <p>As researchers, we must safeguard research participants by ensuring our research is conducted in a safe, inclusive and protective environment preparing our research carefully and being ready to act on a safeguarding concern.</p>
+
+
+    <h2>Importance of safeguarding research participants</h2>
+    <p>Research must be planned and conducted in a way which protects people from harm and respects their right to autonomy. Failure to do so will result in safeguarding risks for our research participants.</p>
+    <p>There are 3 main types of safeguarding risks in research that you should consider in your planning and prepare to manage in your research;</p>
+    <ul>
+      <li>The risk of causing the participant and others harm in research settings. For example: if a participant is asked to discuss a traumatic topic and becomes upset.</li>
+      <li>The risk of harm being disclosed or identified in research settings. For example: if a young child reveals that they are left home alone for long periods of time.</li>
+      <li>Direct risks posed by health conditions. For example: exposing participants to an increased chance of catching COVID. </li>
+    </ul>
+
+
+    <h2>How to meet this standard</h2>
+    <p>To ensure you are meeting this standard you must complete the following checklist. If you select yes for all questions, you have met the DfE standard. If you select no to anything or you're unclear, seek the advice of a senior or lead UR.</p>
+    <p>You must</p>
+    <ul>
+      <li>have an appropriate person to escalate to if there's disclosure of harm in a research session</li>
+      <li>give participants an opportunity to ask questions about the research before participation</li>
+      <li>record the informed consent from the participant</li>
+      <li>check whether participants with access needs need a different format for your consent process </li>
+      <li>Send participant an information sheet which:
+          <ul>
+            <li>shares the aims and objectives of your research with participants</li>
+            <li>explains participants have a right to not take part in your research</li>
+            <li>informs participants of who to contact if they wish to withdraw their data from the study</li>
+            <li>explains to participants how you will use the outputs of the research</li>
+            <li>explains to participants the situations where you may have to break confidentiality</li>
+          </ul>
+      </li>
+      <li>If you're researching with vulnerable users e.g. adults with learning disabilities or children and young people you must also:
+          <ul>
+            <li>check if you need consent from a parent, guardian or other person</li>
+            <li>If required, gain informed consent from the appropriate person</li>
+            <li>Check participants understand the intentions of the project</li>
+            <li>Check participants know who made the decisions about about their involvement and why</li>
+            <li>check the participants volunteer for the project once they understand itmake sure you will never be alone with any children during research session</li>
+          </ul>
+      </li>
+    </ul>
+    <p class="govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+      <a href="xxxxxxx" class="dfe-cta">Download checklist as a spreadsheet</a>
+    </p>
+
+
+{% endmarkdown%}
+
+{% endblock %}
+
+{% block related %}
+<h2 class="govuk-heading-m">Templates and tools</h2>
+<p>Using these templates and tools will help you meet this standard. (Links for DfE employees/contractors only)</p>
+<ul>
+  <li><a href="xxxxxx">Information sheet template</a></li>
+  <li><a href="xxxxxx">Consent form templates</a></li>
+</ul>
+
+<h2 class="govuk-heading-m">Where to get advice</h2>
+<p>If you need advice on meeting this standard, you should contact:</p>
+<ul>
+  <li>The senior user researcher for your team/area</li>
+  <li><a href="xxxxxx">The lead user researcher for your portfolio, or the head of user research</a></li>
+  <li><a href="xxxxxx">The Ethics Advisory Group, using the #ethicsadvisorygroup slack channel</a></li>
+</ul>
+
+<h2 class="govuk-heading-m">DfE guidance</h2>
+<ul>
+  <li>Participant safeguarding - User Research (education.gov.uk)</li>
+  <li>Research with children and young people - User Research (education.gov.uk)</li>
+  <li>Gaining informed consent - User Research (education.gov.uk)</li>
+</ul>
+
+<h2 class="govuk-heading-m">Further reading</h2>
+<ul>
+  <li>Links to resources/information sources</li>
+</ul>
+
+{% endblock%}

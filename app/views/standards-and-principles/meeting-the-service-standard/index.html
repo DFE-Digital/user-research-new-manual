@@ -1,0 +1,31 @@
+{% extends "layouts/content-with-sidenav.html" %}
+
+{% set selectedNav = "Standards and principles" %}
+{% set pageName = "Meeting the government service standard in your research" %}
+{% set pageDescription = "How to ensure your work always meets the service standard." %}
+
+<!-- tag should be green for Published, yellow for Draft -->
+
+
+{% block content %}
+
+{% markdown %}
+
+<!-- main page content starts here -->
+
+## You can write in markdown
+
+- Bullet 1
+- Bullet 2
+
+<h2 class="govuk-heading-l">Or mix it up with HTML</h2>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>Bullet 1</li>
+  <li>Bullet 2</li>
+</ul>
+
+
+{% endmarkdown%}
+
+{% endblock %}

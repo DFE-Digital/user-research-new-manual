@@ -1,0 +1,48 @@
+{% extends "layouts/content-with-sidenav.html" %}
+
+{% set selectedNav = "Standards and principles" %}
+{% set pageName = "Participant recruitment" %}
+{% set pageDescription = "DfE's standard for recruiting particpants for user research." %}
+
+{% set lastUpdated = "1 October 2023" %}
+{% set publishStatus = "Published" %}
+{% set tagColour = "green" %}
+<!-- tag should be green for Published, yellow for Draft -->
+
+{% block heroExtra %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <h2 class="govuk-heading-s">Status</h2>
+      <strong class="govuk-tag govuk-tag--{{tagColour}}">{{publishStatus}}</strong>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <h2 class="govuk-heading-s">Last updated</h2>
+      <strong class="govuk-tag govuk-tag--{{tagColour}}">{{lastUpdatedv | date('D MMM YYYY')}}</strong>
+    </div>
+  </div>
+
+{% endblock%}
+
+{% block content %}
+
+{% markdown %}
+
+<!-- main page content starts here -->
+
+## You can write in markdown
+
+- Bullet 1
+- Bullet 2
+
+<h2 class="govuk-heading-l">Or mix it up with HTML</h2>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>Bullet 1</li>
+  <li>Bullet 2</li>
+</ul>
+
+
+{% endmarkdown%}
+
+{% endblock %}
