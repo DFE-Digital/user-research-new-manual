@@ -41,19 +41,6 @@ ul.govuk-list a[href*=' ']:after {
   white-space: nowrap; 
 }
 
-blockquote {
-  background:#ffb0af !important;
-}
-blockquote:after {
-  content:'[blockquote tag]';
-  background:#ffb0af;
-  font-weight:bold;
-  color:#000;
-  margin-left: 3px;
-  padding-left:3px;
-  padding-right:3px;
-  white-space: nowrap;
-}
 
 
 
@@ -1309,6 +1296,7 @@ input[type=submit].dfe-a-button {
   width: 100%;
   min-height: 10rem;
   margin: 0 auto;
+  background: #f3f2f1;
 
   &.dfe-o-banner--blog {
     a {
@@ -1903,16 +1891,15 @@ code {
 }
 
 .dfe-panel-section {
-  background: $color_dfe-secondary-blue;
+  background: map-get($govuk-colours-organisations, 'department-for-education', 'colour-websafe');
   padding: 40px;
 
 }
 
-.dfe-panel-section .govuk-heading-m,
-.dfe-panel-section p {
-  color: $color_dfe-white
-}
+.dfe-panel-section .govuk-heading-m, .dfe-panel-section .govuk-heading-l, .dfe-panel-section p {
+  color: $color_dfe-white;
 
+}
 
 .dfe-cta-panel {
   background: #F2AA66;
@@ -1980,7 +1967,6 @@ code {
 
 .dfe-cta {
   padding: 12px 30px;
-  border-radius: 8px;
   background-color: #c94922;
   text-decoration: none;
   font-weight: 600;
@@ -2008,7 +1994,6 @@ code {
 
   .dfe-cta {
     padding: 12px 30px;
-    border-radius: 8px;
     background-color: #c94922;
     text-decoration: none;
     font-weight: 600;
@@ -2041,9 +2026,8 @@ code {
     min-width: calc(80% - 30px);
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
     padding: 30px;
-    background: #ebf2f6;
+    background: #f3f2f1;
 
     a{font-weight: 600; margin: 5px 0px}
 
@@ -2092,20 +2076,17 @@ code {
     /* Space between cards */
     justify-content: space-between;
 
-
   }
 
   .dfemanual-cta-cards li {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    flex: 1;
-    min-width: calc(25% - 30px);
+    max-width: 320px;
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
     padding: 30px;
-    background: #ebf2f6;
+    background: #f3f2f1;
 
     a{font-weight: 600; }
 
@@ -2135,9 +2116,14 @@ code {
     }
 
   }
+  
+  .dfemanual-cta-cards--full li {
+    min-width: calc(100% - 60px);
+  }
 
+  
   .dfemanual-cta-cards--half li {
-    min-width: calc(40% - 30px);
+    min-width: calc(45% - 30px);
   }
 
   /* To make all <li> the same height as the tallest one */
@@ -2154,4 +2140,76 @@ code {
 
     a{font-weight: 600;}
   }
+}
+
+
+
+/* Sets the background color of the container div to dark grey */
+.dfemanual-scores {
+ 
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Sets the style of each individual score */
+.dfemanual-score {
+  background-color: $color_dfe-grey-2;
+  color: $color_dfe-black; /* Sets the text color to white for contrast against the dark background */
+  margin: 0 5px; /* Adds gaps between each span */
+  padding: 10px 15px; /* Adds padding around the numbers */
+  border-radius: 4px; /* Rounds the corners for a softer look */  font-weight: 600;
+  font-size: 22px;
+}
+
+/* Sets the background color of the current score to blue */
+.dfemanual-score--current {
+  background-color: govuk-colour("orange");
+  color: $color_dfe-white;
+  font-weight: 600;
+}
+
+
+.dfe-manual-color-chip{display: block; height: 160px; width: 100%; border-radius: 8px 8px 0 0;}
+
+
+.govuk-list.dfe-list--styled li {
+  cursor: pointer;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  background: $color_dfe-grey-4;
+  margin-bottom: 10px;
+}
+
+.govuk-list.dfe-list--styled li:hover {
+  background: $color_dfe-grey-3; /* Change the color for the hover state as needed */
+}
+
+.govuk-list.dfe-list--styled li:last-of-type {
+  margin-bottom: 0;
+}
+
+.govuk-list.dfe-list--styled li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.govuk-list.dfe-list--styled li:hover a {
+  background: $color_dfe-grey-3;
+  transition: background 0.3s, color 0.3s;
+}
+
+.govuk-list.dfe-list--styled li::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid black; /* Change the color as needed */
+  margin-left: 10px;
 }

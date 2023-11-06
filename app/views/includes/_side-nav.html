@@ -129,14 +129,26 @@
 ] %}
 {% set guidance_and_help__recruiting_particpants = [
   {
-    title: "Pages tbc",
-    url: "/guidance-and-help/recruiting-participants/"
+    title: "Recruiting participants yourself (self-recruitment)",
+    url: "/guidance-and-help/recruiting-participants/self-recruitment.html"
+  },{
+    title: "Using a commercial agency to recruit participants",
+    url: "/guidance-and-help/recruiting-participants/commercial-agency.html"
+  },{
+    title: "Using a panel to recruit participants",
+    url: "/guidance-and-help/recruiting-participants/recruitment-panels.html"
+  },{
+    title: "Paying incentives",
+    url: "/guidance-and-help/recruiting-participants/paying-incentives.html"
   }
 ] %}
 {% set guidance_and_help__inclusive_research = [
   {
-  title: "Inclusive research",
+  title: "Introduction to inclusive research",
     url: "/guidance-and-help/inclusive-research/"
+  },{
+    title: "Research with users with access needs",
+    url: "/guidance-and-help/inclusive-research/research-users-access-needs.html"
   }
 ] %}
 
@@ -153,6 +165,19 @@
     url: "/templates-and-tools/using-third-party-research-labs/"
   }
 ] %}
+
+
+{% set research_insight = [
+  {
+    title: "Finding existing user research insight",
+    url: "/research-insight/"
+  },{
+    title: "Other sources of insight, evidence and data",
+    url: "/research-insight/other-insight-sources.html"
+  }
+] %}
+
+
 
 
 
@@ -278,7 +303,16 @@
 
   {% endif %}
 
+  {%- if selectedNav == "Research insight" %}
+    <ul class="dfe-vertical-nav__section">
+      {% for item in research_insight %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
 
+  {% endif %}
 
 </nav>
 

@@ -1,7 +1,7 @@
-{% extends "layouts/content-full-width.html" %}
+{% extends "layouts/content-with-sidenav.html" %}
 
 {% set selectedNav = "Research insight" %}
-{% set pageName = "Research insight" %}
+{% set pageName = "Finding existing user research insight" %}
 {% set pageDescription = "Finding existing research, insight and evidence about the users of DfE's policy and services" %}
 
 {% block content %}
@@ -10,71 +10,96 @@
 
 <!-- main page content starts here -->
 
-<section style="background: #ebf2f6;">
-    <div class="dfe-width-container" style="padding-top: 60px; padding-bottom: 60px;">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-          <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">{{pageName}}</h1>
-          <p class="govuk-body-l govuk-!-margin-bottom-0">{{pageDescription}}</p>
-        </div>
-      </div>
-    </div>
-</section>
-  
+<h2 class="govuk-heading-s">Page contents</h3>
+    <ul class="govuk-list govuk-list--spaced">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#users-of-skills-services">Users of Skills services</a></li>
+        <li><a href="#users-of-schools-services-schools-and-teachers">Users of Schools services (schools and teachers)</a></li>
+        <li><a href="#users-of-families-services">Users of Families services</a></li>
+        <li><a href="#dfe-staff-users-and-other-users">DfE staff users and other users</a></li>
+        <li><a href="#future-user-research-insight-strategy">Future user research insight strategy</a></li>
+    </ul>
+
+## Overview
+
+Across Department for Education, we have a wide and diverse set of users. Around half the English population are users of our services, or are end-beneficiaries of our policies. 
+
+Every team and programme will have specific insight about their own users in the context of the service they are building. Speak to your team, sernior user researcher or lead user researcher.
+
+We are also starting to gathering a common, cross-departmental understanding of our users, so that we all have the same baseline understanding of the people who use and are affected by our services and policies.
+
+We also have access to various <a href="/research-insight/other-insight-sources.html">other research, evidence and data collections</a>, which should be used for desk research and gaining wider understanding of your policy area and users.
+
+We broadly organise users into DfE's <a href="https://educationgovuk.sharepoint.com/sites/strategy-and-vision">three priority outcome areas (DfE Intranet)</a>, which guide the work we do as a department: Skills, Schools and Families.
 
 
-## Families
+## Users of Skills services 
+
+Skills service areas include Apprenticeships, National Careers Service, T Levels and other policy and services around the skills that support people to work.
+
+Service users include:
+- training providers
+- further education providers
+- careers advisors
+- employers
+- adult learners
+- young people moving towards the end of formal education, and their families
+- operational staff in DfE and our partners
+
+<a href="https://educationgovuk.sharepoint.com/:f:/s/lvewp00449/EtQ50w6zUvpAkiXzm6BUuOcBElPouQ2HfkoR0V0XpV2Mvw?e=ydJ1FM">Insight about users of Skills services (DfE SharePoint)</a>
+
+
+## Users of Schools services (schools and teachers)
+
+DfE delivers a wide range of services for schools and teachers, including services to recruit and upskill the teaching workforce, services to support the efficient running of schools and academy trusts, funding services, and services to collect educational data and present that data to the public.
+
+Service users include:
+- teachers and prospective teachers
+- senior teachers and school leaders
+- school business professionals and other people involved in the administration and leadership of schools and trusts
+- governors and trustees
+- businesses and organisations who use DfE data
+- operational staff in DfE
+
+The end beneficiaries of the policies that inform our services are students, and so we sometimes also research with children and their families.
+
+<a href="https://educationgovuk.sharepoint.com/:f:/s/lvewp00449/EmV7DRoU0ZdApUaWLi1L73sBlVqF3T5zNwcLYjwTQQt-Uw?e=HhV94A">Insight about users of services for schools (DfE SharePoint)</a>
+
+<a href="https://educationgovuk.sharepoint.com/:f:/s/lvewp00449/EslKi8aXt4JMoXZT-DP0IzQBP1GXWN3AZw0uMbw0vgWz-w?e=0S6lJS">Insight about services for teachers and prospective teachers (DfE SharePoint)</a>
+
+
+## Users of Families services
 
 Our services for families include support for children's social care provision, early years providers, Family Hubs, SEND support and other policy and services that support families and vulnerable young people.
 
-Our users include social workers, local authority staff and leaders responsible for service provision, early years staff and leaders, 
+Service users include: 
+
+- social workers
+- local authority staff and leaders responsible for service provision
+- early years staff and leaders
+- childminders
+- children and families in the care system
+
+<a href="https://educationgovuk.sharepoint.com/:f:/s/lvewp00449/EnbvqwfMHcNMrfGXGSnlB4MBIIRGQESmXs-T8SBZzvl8vw?e=cAX4GQ">Insight about users of Families services (DfE SharePoint)</a>
 
 
+## DfE staff users and other users
 
+We also research with DfE staff (other than in the context of operational staff supporting DfE services) to help improve internal HR, finance and other colleague services.
 
-<section class="" style="">
-    <div class="dfe-width-container" style="padding: 40px 0px 80px 0px">
-        <div class="govuk-grid-row">
-            <div class="govuk-grid-column-full">
-                <h2 class="govuk-heading-l">Our service areas and users</h2>
-                <p class="govuk-body-m">Across Department for Education, we have a wide and diverse set of users. Around half the English population are users of our services, or are end-beneficiaries of our policies.</p>
-                <p class="govuk-body-m">We broadly organise users into DfE's <a href="https://educationgovuk.sharepoint.com/sites/strategy-and-vision">three priority outcome areas (DfE Intranet)</a>, which guide the work we do as a department: Skills, Schools and Families.</p>
-            </div>
-        </div>
-        <div class="govuk-grid-row">
-            <div class="govuk-grid-column-full">
-                <ul class="dfemanual-cta-cards">
-                    <li class="card">
-                        <h3>Skills</h3>
-                        <p>In Skills, our service areas include Apprenticeships, National Careers Service, T Levels and other policy and services around the skills that support people to work.</p>
-                        <p>Our users include training providers, further education providers, careers advisors, employers, adult learners, young people moving towards the end of formal education and their families, and operational staff in DfE and our partners.</p>
-                        <p>
-                            <a href="/xxxxxxxx" class="govuk-link govuk-link--no-visited-state">Find existing research <span class="govuk-visually-hidden">about Skills service users</span> (DfE SharePoint)</a>
-                        </p>
-                    </li>
-                    <li class="card">
-                        <h3>Schools (and teachers)</h3>
-                        <p>DfE delivers a wide range of services for schools and teachers, including services to recruit and upskill the teaching workforce, services to support the efficient running of schools and academy trusts, funding sevrices, and services to collect educational data and present that data to the public.</p>
-                        <p>Users include teachers and prospective teachers, senior teachers and school leaders, school business professionals and other people involved in the administration and leadership of schools and trusts. The end beneficiaries of the policies that inform our services are students, and so sometimes we will research with chilfren and their families.</p>
-                        <p>
-                            <a href="/xxxxxxxx" class="govuk-link govuk-link--no-visited-state">Find existing research <span class="govuk-visually-hidden">about Schools and Teachers service users</span> (DfE SharePoint)</a>
-                        </p>
-                    </li>
-                    <li class="card">
-                        <h3>Service design</h3>
-                        <p>Learn how service designers design the end-to-end journey of a service. This helps a user complete their goal and the department deliver a policy intent.</p>
-                        <p>
-                            <a href="/inside-design/professions/service-design" class="govuk-link govuk-link--no-visited-state">Learn more <span class="govuk-visually-hidden">about service design</span></a>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+We may also have insight about other external user groups, from more strategic policy projects, or other project sitting outside of our core portfolio areas.
 
+<a href="https://educationgovuk.sharepoint.com/:f:/s/lvewp00449/EnbvqwfMHcNMrfGXGSnlB4MBIIRGQESmXs-T8SBZzvl8vw?e=cAX4GQ">Insight about DfE users and other users (DfE SharePoint)</a>
 
+Also ask in the <a href="">user research community Slack channel</a>.
 
+## Future user research insight strategy
+
+In the future, we plan to develop a single departmental taxonomy of our users, and baseline insights and a shared understanding of our users. This will make our research more efficient, because it will be quicker to find important, shared insight about users, and we will avoid repeatedly asking the same research questions to our users.
+
+The <a href="https://educationgovuk.sharepoint.com/sites/lvewp00473?siteid=%7BB1DC877C-B573-4A93-AF8D-15C6C47100DC%7D&webid=%7B42A90595-959A-4382-9AC2-9EE5F352226E%7D&uniqueid=%7B8695DCF7-37F3-4FE4-B849-548E2733DA46%7D">About Users of DfE Services for Schools</a> SharePoint workplace is our first example of this. We want to develop similar collections of insight and collaborate across programmes of work to develop shared, high level insights across all of our major user groups.
+
+This will be a significant effort across the user research community. <a href="">Contact the head of user research to get involved</a>.
 
 
 {% endmarkdown%}

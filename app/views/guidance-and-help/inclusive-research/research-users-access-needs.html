@@ -1,0 +1,75 @@
+{% extends "layouts/content-with-sidenav.html" %}
+
+{% set selectedNav = "Guidance and help" %}
+{% set pageName = "Research with users with access needs" %}
+{% set pageDescription = "Planning and deliver research with people with access needs" %}
+
+{% block content %}
+
+{% markdown %}
+
+<!-- main page content starts here -->
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    There have been <a href="https://accessibility.blog.gov.uk/2022/12/09/some-changes-to-the-public-sector-digital-accessibility-regulations/">changes to the public sector digital accessibility regulations</a> you should make yourself aware of
+  </strong>
+</div>
+
+It is very important that all DfE services are designed and tested with users with access needs.
+
+This ensures your service will meeting equality law, and that it will work for all users.
+
+<h2 class="govuk-heading-s">Page contents</h3>
+  <ul class="govuk-list govuk-list--spaced">
+    <li><a href="#use-the-dfe-accessibility-guidance">Use the DfE accessibility guidance</a></li>
+    <li><a href="#always-plan-to-recruit-users-with-access-needs">Always plan to recruit users with access needs</a></li>
+    <li><a href="#using-proxy-users">Using 'proxy users'</a></li>
+    <li><a href="#accessibility-audits">Accessibility audits</a></li>
+    <li><a href="#asking-users-with-access-needs-about-protected-characteristics">Asking users with access needs about protected characteristics</a></li>
+    <li><a href="#future-plans-to-develop-this-guidance-and-our-support-for-accessible-research">Future plans to develop this guidance and our support for accessible research</a></li>
+  </ul>
+  
+## Use the DfE accessibility guidance
+
+The <a href="https://design.education.gov.uk/accessibility">accessibility guidance on the Design manual</a> gives advice and background to accessibility, and how we approach designing accessible services at DfE.
+
+## Always plan to recruit users with access needs
+
+Your research plan must always include researching with users with access needs. You will not pass a service assessments if you don't research with these users, or if you haven't at least made significant attempts to recruit them and have plans to continue trying to recruit them.
+
+We know that some DfE user populations are very small, and it can be difficult to find and recruit these participants. 
+
+You should therefore plan your recruitment well in advance, and not rely on a single recruitment method. Try a range of recruitment methods, and collaborate with other researchers in your programme who will also be looking for the same groups of users.
+
+## Using 'proxy users'
+
+If you try mutliple recruitment methods but are still unable to recruit users with access needs, you can use proxy users instead: people with access needs who aren't real users of your service, but have some similarities (e.g. you might be looking for a School Business Professional, and recruit somebody in a different managerial role).
+
+Proxy users can test the basic accessibility of a user interface (e.g. ) but they cannot help you understand whether the service will meet their needs as an actual users, or anything else contextual about their experience of your service.
+
+Using proxy users should therefore be a last resort: only do this if you have genuinely exhausted other methods.
+
+Don't rely on using internal DfE staff with disabilities as proxy users: they will not understand DfE services from the point of view of a user. Additionally, DfE staff with access needs have very often been asked to take part in accessibility tests in addition to their day-to-day roles, creating an unfair burden on them. It also means that they are at risk of becoming 'professional testers' who do not act like real users.
+
+## Accessibility audits
+
+Your service should go through an accessibility audit. Your delivery manager will arrange this.
+
+This will test the code to ensure it meets <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> standards, and it may test usability of the interface in various assistive technology. It iwll not test the contextual use of a service and whether it meets service users' needs, so you should not treat it as an alternative to testing your service with real users with access needs.
+
+## Asking users with access needs about protected characteristics
+
+When individuals are directly invited to research rather than taken from a recruitment panel, that you only ask about their protected characteristics after the research session, on an entirely voluntary basis. This ensures that participants do not feel they have to provide the information to take part in the research.
+
+## Future plans to develop this guidance and our support for accessible research
+
+In the future, we will work with the design community and DfE's digital accessibility lead to develop this guidance for user researchers, and the support and tools you need to more easily recruit and conduct research with users with access needs.
+
+See <a href="/-about-ur-at-dfe/developing-ur-profession.html">our profession roadmap</a>.
+
+{% endmarkdown%}
+
+{% endblock %}
