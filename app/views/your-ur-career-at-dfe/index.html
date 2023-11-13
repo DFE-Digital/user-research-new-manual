@@ -1,0 +1,85 @@
+{% extends "layouts/content-full-width.html" %}
+
+{% set selectedNav = "Your career" %}
+{% set pageName = "Your user research career at DfE" %}
+{% set pageDescription = "Information about joining the department, and developing as a user researcher" %}
+{% set zeroMainMargin = "true"%}
+
+{% block content %}
+
+{% markdown %}
+
+<section style="background: #ebf2f6;">
+    <div class="dfe-width-container" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">{{pageName}}</h1>
+                <p class="govuk-body-l govuk-!-margin-bottom-0">{{pageDescription}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="" style="">
+    <div class="dfe-width-container" style="padding: 40px 0px 80px 0px">
+       <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+             <div class="dfe-grid-container">
+                <div class="dfe-card">
+                    <div class="dfe-card-container">
+                       <h2 class="govuk-heading-m">
+                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/guidance-for-new-starters.html">Information for new starters</a>
+                       </h2>
+                       <p>Useful information for anybody joining DfE as a civil servant or contractor user researcher</p>
+                    </div>
+                 </div>
+                 <div class="dfe-card">
+                    <div class="dfe-card-container">
+                       <h2 class="govuk-heading-m">
+                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/roles-and-capability-framework.html">User research roles and capability framework</a>
+                       </h2>
+                       <p>The different levels of user researcher in DfE, and the skills and capabilities required at each level</p>
+                    </div>
+                 </div>
+                 <div class="dfe-card">
+                    <div class="dfe-card-container">
+                       <h2 class="govuk-heading-m">
+                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/profession-management-and-mentoring.html">Profession management and mentoring</a>
+                       </h2>
+                       <p>Different ways to get day to day support in your role, and to get help and advice as you develop your user research career at DfE</p>
+                    </div>
+                 </div>
+                 <div class="dfe-card">
+                    <div class="dfe-card-container">
+                       <h2 class="govuk-heading-m">
+                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/able-objectives.html">ABLE objectives</a>
+                       </h2>
+                       <p>Profession and development objectives, to help your monthly line manager discussions</p>
+                    </div>
+                 </div>
+                 <div class="dfe-card">
+                    <div class="dfe-card-container">
+                       <h2 class="govuk-heading-m">
+                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/training-and-online-resources.html">Training and online resources</a>
+                       </h2>
+                       <p>How to access training, and a list of online resources about user research</p>
+                    </div>
+                 </div>
+                 <div class="dfe-card">
+                    <div class="dfe-card-container">
+                       <h2 class="govuk-heading-m">
+                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/applying-for-dfe-ur-jobs.html">Applying for DfE user research jobs</a>
+                       </h2>
+                       <p>What to expect when applying for UR roles at DfE, and tips for your application and interview</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endmarkdown%}
+
+{% endblock %}
