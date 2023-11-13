@@ -3,7 +3,7 @@
 @import './ncs/index.scss';
 
 /* production/debugging */
-a[href=''], a[href='#'], a[href^='/-'] {
+a[href=''], a[href='#'], a[href^='/-'], a[href^='EMPTY'] {
   background:#ffb0af !important;
 }
 a[href='']:after, a[href='#']:after {
