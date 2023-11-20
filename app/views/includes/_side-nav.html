@@ -161,12 +161,15 @@
   {
     title: "What user researchers do",
     url: "/guidance/working-with-a-ur-in-your-team/what-user-researchers-do.html"
-  },{
+  }
+] %}
+{% set guidance__recruiting_urs = [
+  {
     title: "Recruiting a user researcher for your team",
-    url: "/guidance/working-with-a-ur-in-your-team/recruiting-a-user-researcher.html"
+    url: "/guidance/recruiting-urs/recruiting-a-user-researcher.html"
   },{
     title: "Contractors and statements of work",
-    url: "/guidance/working-with-a-ur-in-your-team/contractors-and-statements-of-work.html"
+    url: "/guidance/recruiting-urs/contractors-and-statements-of-work.html"
   }
 ] %}
 
@@ -282,6 +285,15 @@
           </li>
         {% endfor %}
       {% endif %}
+
+      {%- if guidanceSection == "recruiting_urs" %}
+        {% for item in guidance__recruiting_urs %}
+          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      {% endif %}
+
 
       {%- if guidanceSection == "civil_service" %}
         {% for item in guidance__civil_service %}
