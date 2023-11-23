@@ -1,82 +1,48 @@
-{% extends "layouts/content-full-width.html" %}
+{% extends "layouts/content-with-sidenav.html" %}
 
 {% set selectedNav = "Your career" %}
 {% set pageName = "Your user research career at DfE" %}
-{% set pageDescription = "Information about joining the department, and developing as a user researcher" %}
-{% set zeroMainMargin = "true"%}
+{% set pageDescription = "Information about joining the department, and developing as a user researcher." %}
 
 {% block content %}
 
 {% markdown %}
 
-<section style="background: #ebf2f6;">
-    <div class="dfe-width-container" style="padding-top: 60px; padding-bottom: 60px;">
-        <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-                <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">{{pageName}}</h1>
-                <p class="govuk-body-l govuk-!-margin-bottom-0">{{pageDescription}}</p>
-            </div>
-        </div>
-    </div>
-</section>
+From the day you apply for a user research role at Department for Education, and through your time in the department, we want you to feel you can grow your skills and develop in your career here.
 
-<section>
-    <div class="dfe-width-container" style="padding: 40px 0px 80px 0px">
-       <div class="govuk-grid-row">
-          <div class="govuk-grid-column-full">
-             <div class="dfe-grid-container">
-                <div class="dfe-card">
-                    <div class="dfe-card-container">
-                       <h2 class="govuk-heading-m">
-                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/information-for-new-starters.html">Information for new starters</a>
-                       </h2>
-                       <p>Useful information for anybody joining DfE as a civil servant or contractor user researcher</p>
-                    </div>
-                 </div>
-                 <div class="dfe-card">
-                    <div class="dfe-card-container">
-                       <h2 class="govuk-heading-m">
-                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/roles-and-capability-framework.html">User research roles and capability framework</a>
-                       </h2>
-                       <p>The different levels of user researcher in DfE, and the skills and capabilities required at each level</p>
-                    </div>
-                 </div>
-                 <div class="dfe-card">
-                    <div class="dfe-card-container">
-                       <h2 class="govuk-heading-m">
-                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/profession-management-and-mentoring.html">Profession management and mentoring</a>
-                       </h2>
-                       <p>Different ways to get day to day support in your role, and to get help and advice as you develop your user research career at DfE</p>
-                    </div>
-                 </div>
-                 <div class="dfe-card">
-                    <div class="dfe-card-container">
-                       <h2 class="govuk-heading-m">
-                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/able-objectives.html">ABLE objectives</a>
-                       </h2>
-                       <p>Profession and development objectives, to help your monthly line manager discussions</p>
-                    </div>
-                 </div>
-                 <div class="dfe-card">
-                    <div class="dfe-card-container">
-                       <h2 class="govuk-heading-m">
-                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/training-and-online-resources.html">Training and online resources</a>
-                       </h2>
-                       <p>How to access training, and a list of online resources about user research</p>
-                    </div>
-                 </div>
-                 <div class="dfe-card">
-                    <div class="dfe-card-container">
-                       <h2 class="govuk-heading-m">
-                          <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/your-ur-career-at-dfe/applying-for-dfe-ur-jobs.html">Applying for DfE user research jobs</a>
-                       </h2>
-                       <p>What to expect when applying for UR roles at DfE, and tips for your application and interview</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+These pages contain advice to help you in a user research job interview with DfE, useful information for your first days and weeks in the department, and information about how to grow, learn, develop and aim towards more senior user research roles in the department.
+
+
+## DfE user research job roles and grades
+
+<div class="govuk-inset-text" style="margin-top:0">
+   See also: <a href="/guidance/recruiting-urs/recruiting-a-user-researcher.html">Guidance for DfE teams planning to recruit a user researcher</a>
+</div>  
+
+We have 5 job role levels for civil servant user researchers. These roles are based on the [standard UK government DDaT (Digital, Data and Technology) user research roles](https://www.gov.uk/guidance/user-researcher), as described on GOV.UK.
+
+Each of our roles map to a specific civil service grade (e.g. 'Senior user researcher' is always at Grade 7). This ensures everybody at the same grade has the same understanding of their role and the expectations on them.
+
+| __Role title__ | __Grade__ | __Standard job description__ | Description of typical role |
+|---------------|---------------|---------------|---------------|
+| __Junior user researcher__ | HEO | [Junior user researcher job description](https://dfe-digital.github.io/dfe-job-descriptions/user_research/junior_user_researcher/index.html) | Development role. Either supports another user researcher in a team, or delivers their own research with support |
+| __User researcher__ | SEO | [User researcher job description](https://dfe-digital.github.io/dfe-job-descriptions/user_research/user_researcher/index.html) | Delivers user research in a single team, without needing day-to-day support |
+| __Senior user researcher__ | G7 | [Senior user researcher job description](https://dfe-digital.github.io/dfe-job-descriptions/user_research/senior_user_researcher/index.html) | Either performs more complex or specialist research in a team, or leads research activity across a programme or related set of teams |
+| __Lead user researcher__ | G6 | [Lead user researcher job description](https://dfe-digital.github.io/dfe-job-descriptions/user_research/lead_user_researcher/index.html#about-the-job) | Leads all user research activity and strategy in a portfolio or larger business area, as part of the leadership team in that portfolio |
+| __Head of user research__ | G6 | (job description currently in development) | Leads and develops user research capability and maturity across the whole department, reporting to Digital, Data and Technology senior leadership team |
+
+## Capability framework
+
+We're developing a capability framework for user researchers, which will map specific user research skills to the roles described above. 
+
+This will let you and your line manager or profession manager assess your skills and experience against your role, helping you recognise where you are in your UR career, and identify opportunities for development. 
+
+In the future, this will also feed into capability-based pay, where your pay within your grade will be adjusted to match your level of skills.
+
+We expect to have a beta capability framework in place in early 2024 (see our <a href="/community-of-practice/how-were-developing-ur-at-dfe.html">profession roadmap</a>).
+
+Until then, refer to your role's job description in your regular development conversations with your line manager, profession manager, or mentor.
+
 
 
 

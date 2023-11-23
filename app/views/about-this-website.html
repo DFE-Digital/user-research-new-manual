@@ -1,0 +1,85 @@
+{% extends "layouts/content-with-sidenav.html" %}
+
+{% set pageName = "About this website" %}
+{% set pageDescription = "Why we created the DfE UR Manual, the user needs it meets, and the content we think lives on here." %}
+{% set selectedNav = "" %}
+{% set lastUpdated = "November 2023"%}
+
+{% block content %}
+
+{% markdown %}
+
+We created this website for two main reasons:
+
+- To collect together all the information and guidance that DfE user researchers (civil servants and contractors) need in order deliver their best work
+- To work in the open, and share our best practice with other user research communnities
+
+This is an important part of our goal of making DfE the best place in government to be a user researcher.
+
+## What user needs does this website meet?
+
+For DfE user researchers, it is intended to meet two primary user needs:
+
+- I need to understand how we approach delivering user research <em>at DfE</em>
+- I need an answer <em>right now</em> to [a specific technical question about delivering user research in DfE].
+
+It should also meet the following needs:
+
+- I need to find support and advice from colleagues, particularly if there are few other user researchers in my programme or portfolio 
+- I need to find existing research insight about my users, from outside of my own programme or portfolio
+- I need to find out how to learn and develop in my career
+- I need to educate and upskill my non-UR team colleagues and stakeholders.
+
+## What content do we publish on this website?
+
+When we decide which content goes on this website, we should always meet the user needs above.
+
+If content could help a user researcher's understanding of how we work at DfE, give them a broad understanding of our users, or answer common questions that all or many DfE user researchers might have, then it should live on this website.
+
+If an article is about user research in general, with nothing specific to DfE or our users, then it should be published as a blog post on the <a href="https://dfedigital.blog.gov.uk">DfE Digital, Data and Technology blog</a>, instead of here.
+
+Content that is very specific to user researchers in a single portfolio or programme, it should live in that programme or portfolio's Sharepoint or Teams space. Examples are:
+
+- portoflio-specific onboarding content
+- operational information, e.g. the location of personal data management libraries in a programme of work
+- details of programme user researcher meetups
+- links to detailed research reports and insights
+
+Because this is a public website, available to everybody in the world, there is some content that is useful to DfE user researchers but shouldn't be published here. This content should instead be kept on the user research SharePoint space, only available to DfE staff:
+
+- Commercially sensitive information, like the names of suppliers and the detailed processes to access them
+- Reesarch insight, unless your team and stakeholders have agreed that it can be made public
+- Any other sensitive information that shouldn't be made available outside of DfE
+
+## History of the UR manual
+
+### Version 1 (December 2022)
+
+We knew from usability testing, user feedback, and web analytics, that there were two main problems with the website:
+
+- the content wasn't actionable enough. I.e. it didn't meet user need 2
+- it was hard to navigate and content was hard to find - i.e. it didn't meet user need 1
+
+### Version 2 (November 2023)
+
+In mid-2023 we decided to fully redesign the website, rather than iterate the existing design. 
+
+This decision was driven by constraints in the old templates making it difficult to meet user need 2 (limitations of the menu component meaning we didn't have enough flexibility in the information architecture). It also gave us the opportunity to create a consistent user experience between the UR manual and other DfE user-centred design profession manuals.
+
+We also had a new business requirement to meet: to publish a set of professional standards for user research, in order to meet DfE's Digital, Design and technology strategy.
+
+We knew that the existing data management guidance in particular was not meeting user needs, and so we re-wrote this from the ground up. We worked closely with DfE colleagues in our Office of the Data Protection Officer, and the Knowledge and Information Management team, as well as content designers. We usability tested and iterated this content, to make it as understandable and actionable as possible. We will continue to iterate this content as we learn more about how it is used.
+
+To improve the information architecture, we researched with DfE and other user researchers with a card sort study, followed by a tree test study. The navigation went through a number of iterations.
+
+The new user research standards were developed as a standalone project in the UR community. Each standard has been usability tested with DfE user researchers throughout the definition and design.
+
+Since mid 2022, we've been running a research study about DfE user researchers, and their needs. This has informed the new website, and will continue to inform its development through 2024.
+
+We've had a lot of help and support throughout from DfE's design and content design commnunities, in addition to involvement from all across our user research community.
+
+
+
+
+{% endmarkdown %}
+{% endblock %}
