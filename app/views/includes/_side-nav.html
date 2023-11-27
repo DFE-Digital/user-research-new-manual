@@ -160,6 +160,12 @@
     url: "/guidance/working-with-a-ur-in-your-team/what-user-researchers-do.html"
   }
 ] %}
+{% set guidance__surveys = [
+  {
+    title: "Surveys, survey tool and survey champions",
+    url: "/guidance/survey-design-champions"
+  }
+] %}
 {% set guidance__recruiting_urs = [
   {
     title: "Recruiting a user researcher for your team",
@@ -291,6 +297,13 @@
         {% endfor %}
       {% endif %}
 
+      {%- if guidanceSection == "surveys" %}
+        {% for item in guidance__surveys %}
+          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      {% endif %}
 
       {%- if guidanceSection == "civil_service" %}
         {% for item in guidance__civil_service %}

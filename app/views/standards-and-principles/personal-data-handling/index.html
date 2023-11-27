@@ -1,51 +1,121 @@
-{% extends "layouts/content-with-sidenav.html" %}
+{% extends "layouts/content-full-width.html" %}
 
 {% set selectedNav = "Standards and principles" %}
-{% set pageName = "Personal data handling" %}
-{% set pageDescription = "DfE's standard to ensure all particpant data gathered during user research is handled secureyl, legally and ethically." %}
+{% set pageName = "Secure handling of participant data" %}
+{% set pageDescription = "DfE's standard to ensure all participant data gathered during user research is handled secureyl, legally and ethically." %}
+{% set zeroMainMargin = "true"%}
 
-{% set lastUpdated = "1 October 2023" %}
-{% set publishStatus = "Published" %}
-
-      {% if publishStatus == "Published" %}
-        {% set tagColour = "govuk-tag--green" %}
-      {% elseif publishStatus == "Draft" %}
-        {% set tagColour = "govuk-tag--yellow" %}
-      {% endif %}
-
-{% block heroExtra %}
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-quarter">
-      <h2 class="govuk-heading-s">Status</h2>
-      <strong class="govuk-tag {{tagColour}}">{{publishStatus}}</strong>
-    </div>
-    <div class="govuk-grid-column-one-quarter">
-      <h2 class="govuk-heading-s">Last updated</h2>
-      <strong class="govuk-tag {{tagColour}}">{{lastUpdatedv | date('D MMM YYYY')}}</strong>
-    </div>
-  </div>
-
-{% endblock%}
-
+{% set lastUpdated = "16 November 2023" %}
+{% set publishStatus = "Beta" %}
+{% set tagColour = "blue" %}
+<!-- tag should be green for Published, blue for Beta, yellow for Draft -->
 
 {% block content %}
 
 {% markdown %}
 
-<!-- main page content starts here -->
+<section style="background: #ebf2f6;">
+  <div class="dfe-width-container" style="padding-top: 60px; padding-bottom: 40px;">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">DfE user research standards</span>
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">{{pageName}}</h1>
+        <p class="govuk-body-l govuk-!-margin-bottom-0">{{pageDescription}}</p>
+      </div>
+    </div>
+    <div class="govuk-grid-row" style="padding-top: 20px;">
+      <div class="govuk-grid-column-one-quarter">
+        <h2 class="govuk-heading-s" style="margin-bottom:10px;">Status</h2>
+        <strong class="govuk-tag govuk-tag--{{tagColour}}">{{publishStatus}}</strong>
+      </div>
+      <div class="govuk-grid-column-one-quarter">
+        <h2 class="govuk-heading-s" style="margin-bottom:10px;">Last updated</h2>
+        <strong class="govuk-tag govuk-tag--{{tagColour}}">{{lastUpdated | date('D MMM YYYY')}}</strong>
+      </div>
+    </div>
+  </div>
+</section>
 
-## You can write in markdown
+<section>
+  <div class="govuk-width-container" style="padding:40px 0 80px 0">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-quarter">
+        <nav class="dfe-vertical-nav">
+          <ul class="dfe-vertical-nav__section">
+            <li class="dfe-vertical-nav__section-item ">
+              <a class="dfe-vertical-nav__link" href="#summary">Summary</a>
+            </li>
+            <li class="dfe-vertical-nav__section-item ">
+              <a class="dfe-vertical-nav__link" href="#why-this-standard-is-important">Why this standard is important</a>
+            </li>
+            <li class="dfe-vertical-nav__section-item ">
+              <a class="dfe-vertical-nav__link" href="#how-to-meet-this-standard">How to meet this standard</a>
+            </li>
+            <li class="dfe-vertical-nav__section-item ">
+              <a class="dfe-vertical-nav__link" href="#templates-and-tools-to-help-you-meet-this-standard">Templates and tools to help you meet this standard</a>
+            </li>
+            <li class="dfe-vertical-nav__section-item ">
+              <a class="dfe-vertical-nav__link" href="#related-guidance-on-the-dfe-user-research-manual">Related guidance on the DfE user research manual</a>
+            </li>
+            <li class="dfe-vertical-nav__section-item ">
+              <a class="dfe-vertical-nav__link" href="#where-to-get-advice">Where to get advice</a>
+            </li>
+            <li class="dfe-vertical-nav__section-item ">
+              <a class="dfe-vertical-nav__link" href="#discuss-this-standard">Discuss this standard</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="govuk-grid-column-three-quarters">
 
-- Bullet 1
-- Bullet 2
+## Summary
 
-<h2 class="govuk-heading-l">Or mix it up with HTML</h2>
+xxxxxx
 
-<ul class="govuk-list govuk-list--bullet">
-  <li>Bullet 1</li>
-  <li>Bullet 2</li>
-</ul>
+## Why this standard is important
+
+xxxxxx
+
+## How to meet this standard
+
+xxxxxx
+
+### You must:
+
+xxxxxx
+
+<p class="govuk-!-margin-top-7 govuk-!-margin-bottom-7"><a href="xxxxxxx" class="dfe-cta">Download this checklist as a spreadsheet</a></p>
+
+## Templates and tools to help you meet this standard
+
+Using these templates and tools will help you meet this standard. (Links for DfE employees/contractors only)
+
+* <a href="xxxxxx">Information sheet template, including link to privacy policy</a>
+* <a href="xxxxxx">Consent form templates</a>
+
+## Related guidance on the DfE user research manual
+
+* <a href="/guidance/how-to-manage-participant-personal-data">Full guidance for managing participants' personal data in user research in DfE</a>
+* <a href="/guidance/ethics-and-safeguarding/gaining-informed-consent">Gaining informed consent</a>
+
+## Where to get advice
+
+If you need advice on meeting this standard, you should contact:
+
+* The senior user researcher for your team or programme</li>
+* <a href="/community-of-practice/leadership-team.html">The lead user researcher in your portfolio, or the head of user research</a></li>
+* <a href="/community-of-practice/research-operations.html">The Research Operations team</a>
+        
+<div style="background: #ebf2f6; padding:20px 30px; margin-top:40px;">
+
+## Discuss this standard
+
+Give feedback or suggest changes to this standard in the <a href="https://ukgovernmentdfe.slack.com/archives/C05SEDKME2Y">#developing-user-research-standards channel in DfE Slack</a>, or by using the 'give us feedback' link at the top of this page. 
+</div>       
+      </div>
+    </div>
+  </div>
+</section>
 
 
 {% endmarkdown%}
