@@ -1,279 +1,413 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-       <loc>https://design.education.gov.uk/</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/cookie-policy</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-system</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/content-design</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/tools</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/professions</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-ops</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility-statement</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-ops/contact</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-system/dfe-frontend</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-system/prototype-kit/github-and-heroku</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-system/dfe-frontend/sass-documentation</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-system/components/header</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/standards</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/roles-and-responsibilities</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/understanding-wcag/perceivable</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/understanding-wcag/operable</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/understanding-wcag/understandable</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/understanding-wcag/robust</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/understanding-wcag/draft-2-2</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/assurance</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/audits</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/evaluation-methodology</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/accessibility-statements</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/tools/inclusivity-calculator</loc>
-       <lastmod>2023-06-02T12:13:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/content-design/writing-design-history-posts</loc>
-       <lastmod>2023-06-02T12:13:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/content-design/types-of-content-we-publish/reviewing-and-checking-content</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/professions/content-design</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/professions/interaction-design</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/professions/service-design</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/professions/meetups</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/professions/show-and-tells</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/professions/themes</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-ops/vision-and-objectives</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-ops/services-weve-built</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-ops/tools</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-ops/design-maturity</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-system/styles/colour</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.5120</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-system/patterns/select-a-school</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.5120</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/accessibility-statements/full-statement</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.5120</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/accessibility-statements/partial-statement</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.5120</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/accessibility/accessibility-statements/notmet-statement</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.5120</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/downloads/content-2i-checklist.docx</loc>
-       <lastmod>2023-06-02T10:57:13+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.5120</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-system/prototype-kit</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.5120</priority>
-  </url>
-  <url>
-       <loc>https://design.education.gov.uk/design-ops/design-maturity/september-2022</loc>
-       <lastmod>2023-06-22T07:53:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.5120</priority>
-  </url>
+<url>
+  <loc>https://user-research.education.gov.uk/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/cookie-policy</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/community-of-practice</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/your-ur-career-at-dfe</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/templates-and-tools</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/research-insight</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/your-ur-career-at-dfe/information-for-new-starters</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/community-of-practice/research-operations</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/community-of-practice/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/participant-safeguarding/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/principles/principle-1</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/principles/principle-2</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/principles/principle-3</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/principles/principle-4</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/principles/principle-5</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/principles/principle-6</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/about-this-website</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/accessibility-statement</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/community-of-practice/community-meetups</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/community-of-practice/ur-slack-channels</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/community-of-practice/community-initiatives-and-interest-groups</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/community-of-practice/leadership-team</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/community-of-practice/how-were-developing-ur-at-dfe</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/your-ur-career-at-dfe/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/your-ur-career-at-dfe/objectives-profession-management-and-mentoring</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/your-ur-career-at-dfe/training-and-online-resources</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/your-ur-career-at-dfe/applying-for-dfe-ur-jobs</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/recruiting-urs/recruiting-a-user-researcher</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/personal-data-handling/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/ethics-and-safeguarding/participant-safeguarding</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/ethics-and-safeguarding/gaining-informed-consent</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/ethics-and-safeguarding/research-with-children-and-young-people</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/ethics-and-safeguarding/research-with-internal-users</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/ethics-and-safeguarding/reducing-burden-on-dfes-users</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/ethics-and-safeguarding/using-social-media-in-user-research</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/how-to-manage-participant-personal-data/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/how-to-manage-participant-personal-data/planning-project-or-phase</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/how-to-manage-participant-personal-data/collecting-data-during-your-research</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/how-to-manage-participant-personal-data/using-lists-for-recruitment</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/how-to-manage-participant-personal-data/anonymising-personal-data</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/how-to-manage-participant-personal-data/after-research-is-finished</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/inclusive-research/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/inclusive-research/research-users-access-needs</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/recruiting-participants/self-recruitment</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/recruiting-participants/commercial-agency</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/recruiting-participants/recruitment-panels</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/recruiting-participants/paying-incentives</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/recruiting-urs/contractors-and-statements-of-work</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/survey-design-champions</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/user-research-in-the-civil-service/index</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/user-research-in-the-civil-service/researching-in-pre-election-periods</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/working-with-a-ur-in-your-team/what-user-researchers-do</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/templates-and-tools/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/templates-and-tools/specialist-software-and-hardware/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/templates-and-tools/using-third-party-research-labs/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/research-insight/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/research-insight/other-insight-sources</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/how-to-manage-participant-personal-data/index</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/inclusive-research/index</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/index</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/how-to-manage-participant-personal-data</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/participant-safeguarding</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/personal-data-handling</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/templates-and-tools/specialist-software-and-hardware/index</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/standards-and-principles/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://user-research.education.gov.uk/guidance/user-research-in-the-civil-service/</loc>
+  <lastmod>2023-11-28T21:11:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>

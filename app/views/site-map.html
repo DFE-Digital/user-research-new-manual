@@ -1,170 +1,237 @@
 {% extends "layouts/content-with-sidenav.html" %}
 
 {% set pageName = "Site map" %}
-{% set pageDescription = "Site map for the user centred design manual in the Department for Education." %}
+{% set pageDescription = "Site map for the user research manual in the Department for Education." %}
 {% set selectedNav = "" %}
-{% set lastUpdated = "June 2023 "%}
+{% set lastUpdated = "November 2023 "%}
 
 {% block content %}
 
-  <ul>
-    <li>
-      <a href="/">Home</a>
-    </li>
-    <li>
-      <a href="/accessibility/">Accessibility</a>
-      <ul class="dfeuk-u-nested-list">
-        <li>
-          <a href="/accessibility/standards">Accessibility standards</a>
-        </li>
-        <li>
-          <a href="/accessibility/understanding-wcag">Understanding WCAG</a>
-          <ul class="dfeuk-u-nested-list">
-            <li>
-              <a href="/accessibility/understanding-wcag/perceivable">Perceivable</a>
-            </li>
-            <li>
-              <a href="/accessibility/understanding-wcag/operable">Operable</a>
-            </li>
-            <li>
-              <a href="/accessibility/understanding-wcag/understandable">Understandable</a>
-            </li>
-            <li>
-              <a href="/accessibility/understanding-wcag/robust">Robust</a>
-            </li>
-            <li>
-              <a href="/accessibility/understanding-wcag/draft-2-2">Draft WCAG 2.2 changes</a>
-            </li>
-          </ul>
-        </li>
+<ul>
+	<li>
+		<a href="/">Home</a>
+	</li>
+	<li>
+		<a href="/community-of-practice">Community of practice</a>
+		<ul class="dfeuk-u-nested-list">
+			<li>
+			<a href="/community-of-practice/community-meetups">Community of practice meetups</a>
+			</li>
+			<li>
+			<a href="/community-of-practice/ur-slack-channels">User Research Slack channels</a>
+			</li>
+			<li>
+			<a href="/community-of-practice/community-initiatives-and-interest-groups">Community initiatives and interest groups</a>
+			</li>
+			<li>
+			<a href="/community-of-practice/leadership-team">Leadership team</a>
+			</li>
+			<li>
+			<a href="/community-of-practice/research-operations">Research operations team</a>
+			</li>
+			<li>
+			<a href="/community-of-practice/how-were-developing-ur-at-dfe">How we're developing UR at DfE</a>
+			</li>
+		</ul>
+	</li>
 
-        <li>
-          <a href="/accessibility/evaluation-methodology">Evaluation methodology</a>
-        </li>
+	<li>
+		<a href="/your-ur-career-at-dfe">Your user research career at DfE</a>
+		<ul class="dfeuk-u-nested-list">
+			<li>
+				<a href="/your-ur-career-at-dfe/information-for-new-starters">Information for new starters</a>
+			</li>
+			<li>
+				<a href="/your-ur-career-at-dfe/objectives-profession-management-and-mentoring">Objectives, profession management and mentoring</a>
+			</li>
+			<li>
+				<a href="/your-ur-career-at-dfe/training-and-online-resources">Training and online resources</a>
+			</li>
+			<li>
+				<a href="/your-ur-career-at-dfe/applying-for-dfe-ur-jobs">Applying for DfE user research jobs</a>
+			</li>
+		</ul>
+	</li>
+	
 
-        <li>
-          <a href="/accessibility/determine-conformance/">Determine conformance</a>
-        </li>
-        <li>
-          <a href="/accessibility/roles-and-responsibilities">Roles and responsibilities</a>
-        </li>
-        <li>
-          <a href="/accessibility/assurance">Testing and assurance</a>
-        </li>
-        <li>
-          <a href="/accessibility/audits">Audits</a>
-        </li>
-        <li>
-          <a href="/accessibility/accessibility-statements">Accessibility statements</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="/design-system/">Design System</a>
-      <ul class="dfeuk-u-nested-list">
-        <li>
-          <a href="/design-system/dfe-frontend/">DfE Frontend</a>
-        </li>
-        <li>
-          <a href="/design-system/styles/">Styles</a>
-          <ul class="dfeuk-u-nested-list">
-            <li>
-              <a href="/design-system/styles/colour">Colour</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="/design-system/components/">Components</a>
-          <ul class="dfeuk-u-nested-list">
-            <li>
-              <a href="/design-system/components/header">Header</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="/design-system/patterns/">Patterns</a>
-          <ul class="dfeuk-u-nested-list">
-            <li>
-              <a href="/design-system/patterns/select-a-school">Select a school</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="/design-system/contribute/">Contribute</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="/content-design/">Content design</a>
-      <ul class="dfeuk-u-nested-list">
-        <li>
-          <a href="/content-design/language-we-use">Language we use</a>
-        </li>
-        <li>
-          <a href="/content-design/writing-design-history-posts">Writing design history posts</a>
-        </li>
-        <li>
-          <a href="/content-design/how-we-write-emails/">How we write emails</a>
-        </li>
-        <li>
-          <a href="/content-design/types-of-content-we-publish/">Types of content we publish</a>
-        </li>
-        <li>
-          <a href="/content-design/publishing-content-on-govuk">Publishing content on GOV.UK</a>
-        </li>
-        <li>
-          <a href="/content-design/types-of-content-we-publish/reviewing-and-checking-content">Reviewing and checking content</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="/tools/">Tools</a>
-      <ul class="dfeuk-u-nested-list">
-        <li>
-          <a href="/tools/inclusivity-calculator">Inclusivity calculator</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="/professions/">Professions</a>
-      <ul class="dfeuk-u-nested-list">
-        <li>
-          <a href="/professions/content-design">Content design</a>
-        </li>
-        <li>
-          <a href="/professions/interaction-design">Interaction design</a>
-        </li>
-        <li>
-          <a href="/professions/service-design">Service design</a>
-        </li>
-        <li>
-          <a href="/professions/meetups">Meetups</a>
-        </li>
-        <li>
-          <a href="/professions/show-and-tells">Show and tells</a>
-        </li>
-        <li>
-          <a href="/professions/themes">Themes</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="/design-ops/">Design Ops</a>
-      <ul class="dfeuk-u-nested-list">
-        <li>
-          <a href="/design-ops/vision-and-objectives">Vision and objectives</a>
-        </li>
-        <li>
-          <a href="/design-ops/services-weve-built">Services we've built</a>
-        </li>
-        <li>
-          <a href="/design-ops/tools">Tools</a>
-        </li>
-        <li>
-          <a href="/design-ops/contact">Contact Design Ops</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
+	<li>
+		<a href="/standards-and-principles">User research standards and principles</a>
+		<ul class="dfeuk-u-nested-list">
+			<li>Our user research standards
+
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/standards-and-principles/participant-safeguarding/">Participant safeguarding in user research</a>
+					</li>
+					<li>
+						<a href="/standards-and-principles/personal-data-handling/">Personal data handling in user research</a>
+					</li>
+				</ul>
+			</li>
+			<li>Our principles for good user research
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/standards-and-principles/principles/principle-1">Principle 1. We include all of our users, and bring them to the heart of the department’s work</a>
+					</li>
+					<li>
+						<a href="/standards-and-principles/principles/principle-2">Principle 2. We are objective and use evidence</a>
+					</li>
+					<li>
+						<a href="/standards-and-principles/principles/principle-3">Principle 3. We do high quality, safe and ethical research</a>
+					</li>
+					<li>
+						<a href="/standards-and-principles/principles/principle-4">Principle 4. We are adaptable and collaborative, and focus our research in the right places</a>
+					</li>
+					<li>
+						<a href="/standards-and-principles/principles/principle-5">Principle 5. We learn by ourselves and as a community</a>
+					</li>
+					<li>
+						<a href="/standards-and-principles/principles/principle-6">Principle 6. We celebrate our work, and help others understand what we do</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+
+
+	<li>
+		<a href="/guidance">Guidance</a>
+		<ul class="dfeuk-u-nested-list">
+			<li>Ethical research and safeguarding
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/guidance/ethics-and-safeguarding/gaining-informed-consent">Gaining informed consent</a>
+					</li>
+					<li>
+						<a href="/guidance/ethics-and-safeguarding/participant-safeguarding">Participant safeguarding</a>
+					</li>
+					<li>
+						<a href="/guidance/ethics-and-safeguarding/reducing-burden-on-dfes-users">Reducing burden on DfE's users</a>
+					</li>
+					<li>
+						<a href="/guidance/ethics-and-safeguarding/research-with-children-and-young-people">Research with children and young people</a>
+					</li>
+					<li>
+						<a href="/guidance/ethics-and-safeguarding/research-with-internal-users">Research with internal users</a>
+					</li>
+					<li>
+						<a href="/guidance/ethics-and-safeguarding/using-social-media-in-user-research">Using social media in user research</a>
+					</li>
+				</ul>
+			</li>
+			<li>How to manage participants' personal data in user research
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/guidance/how-to-manage-participant-personal-data/">Introduction to managing personal data in user research</a>
+					</li>
+					<li>
+						<a href="/guidance/how-to-manage-participant-personal-data/planning-project-or-phase">What to do when planning a project or phase</a>
+					</li>
+					<li>
+						<a href="/guidance/how-to-manage-participant-personal-data/collecting-data-during-your-research">Collecting personal data during your research</a>
+					</li>
+					<li>
+						<a href="/guidance/how-to-manage-participant-personal-data/using-lists-for-recruitment">Using lists of people for participant recruitment</a>
+					</li>
+					<li>
+						<a href="/guidance/how-to-manage-participant-personal-data/anonymising-personal-data">Anonymising UR personal data</a>
+					</li>
+					<li>
+						<a href="/guidance/how-to-manage-participant-personal-data/after-research-is-finished">After your research is finished</a>
+					</li>
+				</ul>
+			</li>
+			<li>Inclusive research
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/guidance/inclusive-research/">Introduction to inclusive research</a>
+					</li>
+					<li>
+						<a href="/guidance/inclusive-research/research-users-access-needs">Research with users with access needs</a>
+					</li>
+
+				</ul>
+			</li>
+			<li>Recruiting participants
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/guidance/recruiting-participants/self-recruitment">Recruiting participants yourself (self-recruitment)</a>
+					</li>
+					<li>
+						<a href="/guidance/recruiting-participants/commercial-agency">Using a commercial agency to recruit participants</a>
+					</li>
+					<li>
+						<a href="/guidance/recruiting-participants/recruitment-panels">Using or building a panel to recruit participants</a>
+					</li>
+					<li>
+						<a href="/guidance/recruiting-participants/paying-incentives">Paying incentives</a>
+					</li>
+				</ul>
+			</li>
+			<li>Recruiting user researchers into DfE (civil servants and contractors)
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/guidance/recruiting-urs/recruiting-a-user-researcher">Recruiting a user researcher for your team</a>
+					</li>
+					<li>
+						<a href="/guidance/recruiting-urs/contractors-and-statements-of-work">Contractors and statements of work</a>
+					</li>
+				</ul>
+			</li>
+			<li>Survey design and survey champions
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/guidance/survey-design-champions">Survey design and survey champions</a>
+					</li>
+				</ul>
+			</li>
+			<li>User research in the civil service
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/guidance/user-research-in-the-civil-service/index">Doing user research under the Civil Service code</a>
+					</li>
+					<li>
+						<a href="/guidance/user-research-in-the-civil-service/researching-in-pre-election-periods">Researching in pre-election periods</a>
+					</li>
+				</ul>
+			</li>
+			<li>Working with a user researcher in your team
+				<ul class="dfeuk-u-nested-list">
+					<li>
+						<a href="/guidance/working-with-a-ur-in-your-team/what-user-researchers-do">What user researchers do</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="/templates-and-tools">Templates, examples and resources library</a>
+		<ul class="dfeuk-u-nested-list">
+			<li>
+				<a href="/templates-and-tools/specialist-software-and-hardware/">Specialist UR tools, software and hardware</a>
+			</li>
+			<li>
+				<a href="/templates-and-tools/using-third-party-research-labs/">Using third-party research labs</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="/research-insight">Research insight</a>
+		<ul class="dfeuk-u-nested-list">
+			<li>
+				<a href="/research-insight/other-insight-sources">Other sources of insight, evidence and data</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="/about-this-website">About this website</a>
+	</li>
+	<li>
+		<a href="/accessibility-statement">Accessibility statement</a>
+	</li>
+	<li>
+		<a href="/cookie-policy">Cookie policy</a>
+	</li>
+</ul>
 
 {% endblock %}
