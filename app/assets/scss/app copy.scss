@@ -3,7 +3,7 @@
 @import './ncs/index.scss';
 
 /* production/debugging */
-a[href=''], a[href='#'], a[href^='/-'] {
+a[href=''], a[href='#'], a[href^='/-'], a[href^='EMPTY'] {
   background:#ffb0af !important;
 }
 a[href='']:after, a[href='#']:after {
@@ -44,7 +44,6 @@ ul.govuk-list a[href*=' ']:after {
 
 
 
-/* Main CSS */
 
 .govuk-width-container {
   max-width: 1200px;
@@ -2082,7 +2081,8 @@ code {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    max-width: 320px;
+    //max-width: 320px;
+    width: calc(50% - 15px);
     display: flex;
     flex-direction: column;
     padding: 30px;
