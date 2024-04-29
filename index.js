@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express')
 const nunjucks = require('nunjucks')
 const https = require('https')
@@ -17,6 +19,8 @@ const glob = require('glob');
 const forceHttps = require('express-force-https');
 const compression = require('compression');
 
+const airtable = require('airtable');
+const base = new airtable({ apiKey: process.env.airtableFeedbackKey }).base(process.env.airtableFeedbackBase);
 
 const helmet = require('helmet');
 
@@ -24,7 +28,7 @@ const favicon = require('serve-favicon');
 
 const PageIndex = require('./middleware/pageIndex')
 const pageIndex = new PageIndex(config)
-require('dotenv').config()
+
 var NotifyClient = require('notifications-node-client').NotifyClient
 
 
@@ -139,136 +143,53 @@ if (config.env !== 'development') {
   }, 2000)
 }
 
-app.post('/submit-feedback', (req, res) => {
-  const feedback = req.body.feedback_form_input
-  const fullUrl = req.headers.referer || 'Unknown'
+// Route for handling Yes/No feedback submissions
+app.post('/form-response/helpful', (req, res) => {
+  const { response } = req.body;
+  const service = "User research manual";
+  const pageURL = req.headers.referer || 'Unknown';
+  const date = new Date().toISOString();
 
-  //Send to notify after validation with recaptcha first
-  //TODO: Implement recaptcha
-
-  notify
-    .sendEmail(process.env.feedbackTemplateID, 'design.ops@education.gov.uk', {
-      personalisation: {
-        feedback: feedback,
-        page: fullUrl,
-        service: "Design Manual"
-      },
-    })
-    .then((response) => { })
-    .catch((err) => console.log(err))
-
-  return res.sendStatus(200)
-})
-
-app.get('/design-system/dfe-frontend', function (req, res, next) {
-  const packageName = 'dfe-frontend-alpha'
-  let version = '-'
-
-  axios
-    .get(`https://registry.npmjs.org/${packageName}`)
-    .then((response) => {
-      const version = response.data['dist-tags'].latest
-      const lastUpdatedv = new Date(response.data.time.modified).toISOString()
-
-      res.render('design-system/dfe-frontend/index.html', {
-        version,
-        lastUpdatedv,
-      })
-    })
-    .catch((error) => {
-      console.error(error)
-    })
-})
-
-app.get('/design-system/dfe-frontend/sass-documentation', function (
-  req,
-  res,
-  next,
-) {
-  const packageName = 'dfe-frontend-alpha'
-  let version = '-'
-
-  axios
-    .get(`https://registry.npmjs.org/${packageName}`)
-    .then((response) => {
-      const version = response.data['dist-tags'].latest
-      const lastUpdatedv = new Date(response.data.time.modified).toISOString()
-
-      res.render('design-system/dfe-frontend/sass-documentation/index.html', {
-        version,
-        lastUpdatedv,
-      })
-    })
-    .catch((error) => {
-      console.error(error)
-    })
-})
-
-app.get('/tools/inclusivity-calculator/:number', (req, res) => {
-
-  var number = parseInt(req.params.number | 0);
-
-  if (number) {
-    fs.readFile('./app/data/stats.json', 'utf8', (err, data) => {
+  base('Data').create([
+      {
+          "fields": {
+              "Response": response,
+              "Service": service,
+              "URL": pageURL
+          }
+      }
+  ], function(err) {
       if (err) {
-        console.error('Error reading data.json:', err);
-        res.sendStatus(500);
-        return;
+          console.error(err);
+          return res.status(500).send('Error saving to Airtable');
       }
-
-      try {
-        const jsonData = JSON.parse(data);
-        const calculatedData = calculateValues(jsonData, number);
-
-
-        res.render('tools/inclusivity-calculator/index.html', { number, calculatedData })
-
-      } catch (err) {
-        console.error('Error parsing data.json:', err);
-        res.sendStatus(500);
-      }
-    });
-  } else {
-    res.redirect('/tools/inclusivity-calculator')
-  }
-})
-
-
-app.post('/tools/inclusivity-calculator', (req, res) => {
-  var number = req.body.numberOfUsers;
-
-  if (number) {
-
-    res.redirect('/tools/inclusivity-calculator/' + number)
-
-  } else {
-    res.redirect('/tools/inclusivity-calculator')
-  }
-});
-
-app.get('/tools/jd-generator', (req, res) => {
-  res.render('tools/jd-generator/index.html')
-});
-
-
-function calculateValues(data, number) {
-  const calculatedData = [];
-
-  data.forEach(item => {
-    const numberresult = Math.ceil((item.percent / 100) * number); // Round up to the nearest whole number so we can account for sub 1 %'s on low user numbers. 
-    calculatedData.push({
-      measure: item.measure,
-      number: numberresult,
-      source: item.source,
-      summary: item.summary,
-      type: item.type
-    });
+      res.json({ success: true, message: 'Feedback submitted successfully' });
   });
+});
 
-  calculatedData.sort((a, b) => b.number - a.number);
+// New route for handling detailed feedback submissions
+app.post('/form-response/feedback', (req, res) => {
+  const { response } = req.body;
+  
+  const service = "User research manual"; // Example service name
+  const pageURL = req.headers.referer || 'Unknown'; // Attempt to capture the referrer URL
+  const date = new Date().toISOString();
 
-  return calculatedData;
-}
+  base('Feedback').create([{
+      "fields": {
+          "Feedback": response,
+          "Service": service,
+          "URL": pageURL
+      }
+  }], function(err) {
+      if (err) {
+          console.error(err);
+          return res.status(500).send('Error saving to Airtable');
+      }
+      res.json({ success: true, message: 'Feedback submitted successfully' });
+  });
+});
+
 
 app.get(/\.html?$/i, function (req, res) {
   var path = req.path

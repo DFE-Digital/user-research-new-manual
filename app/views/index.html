@@ -3,25 +3,28 @@
 {% set pageName = "Department for Education User Research Manual" %}
 {% set pageDescription = "Standards, principles, guidance and support for any user researcher working in Department for Education." %}
 
+
+
 {% block hero %}
-   <section class="dfe-hero">
-      <div class="govuk-width-container ">
-         <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-               <h1 class="govuk-heading-xl govuk-!-font-size-80">User research</h1>
-               <p class="govuk-body-l">Standards, principles, guidance and support for any user researcher working in Department for Education.</p>
-            </div>
+<section class="dfe-page-hero">
+   <div class="dfe-width-container">
+      <div class="govuk-grid-row">
+         <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl govuk-!-font-size-80">User research</h1>
+            <p class="govuk-body-l">{{pageDescription}}</p>
          </div>
       </div>
-   </section>
+   </div>
+</section>
 {% endblock %}
 
 {% block content %}
    <section style="background: #ffffff;">
-      <div class="dfe-width-container" style="padding: 0px 0px 40px 0px">
+      <div class="dfe-width-container">
+         <h2 class="govuk-heading-l">Support and guidance</h2>
          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-one-half">
-               <div class="dfe-grid-container">
+            <div class="govuk-grid-column-full">
+               <div class="dfe-grid-container dfe-grid-container--wider">
                   <div class="dfe-card">
                      <div class="dfe-card-container">
                         <h2 class="govuk-heading-m">
@@ -38,28 +41,51 @@
                         <p>Help with recruiting participants, as well as other support and advice.</p>
                      </div>
                   </div>
-               </div>
-            </div>
-            <div class="govuk-grid-column-one-half">
-               <div class="dfe-card" style="max-width: 100%;">
-                  <div class="dfe-card-container">
-                     <div class="govuk-grid-row">
-                        <div class="govuk-grid-column-one-half">
-                           <h2 class="govuk-heading-m">
-                              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/community-of-practice/">Community of practice</a>
-                           </h2>
-                           <p>Meetups and Slack channels for our active and friendly user research community of practice.</p>
-                        </div>
-                        <div class="govuk-grid-column-one-half" style="text-align:center;">
-                           <img src="/assets/images/user-research-mission-patch.png" style="width:98%; max-width:177px; rotate: 10deg;" alt="Badge showing an otter with a magnifying glass, surrounded by the words 'Department for Education User Research Community'" />
-                        </div>
+                  <div class="dfe-card">
+                     <div class="dfe-card-container">
+                        <h2 class="govuk-heading-m">
+                           <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/guidance">Guidance library</a>
+                        </h2>
+                        <p>Guidance and advice about how we plan and deliver user research in DfE.</p>
                      </div>
                   </div>
                </div>
             </div>
+            
          </div>
       </div>
    </section>
+
+
+   <section class="dfe-section govuk-!-margin-top-0 govuk-!-margin-bottom-9">
+      <div class="dfe-width-container">
+         <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+               <div class="dfe-banner  govuk-!-margin-top-5">
+                  <div class="dfe-banner__content-container">
+                     <div class="dfe-banner__inner-content-container">
+                        <h2 class="govuk-heading-l">
+                           <a class="govuk-link govuk-link--no-visited-state" href="/community-of-practice/">Community of practice</a>
+                        </h2>
+                        <p>Meetups and Slack channels for our active and friendly user research community of practice.</p>
+                       
+                     </div>
+                  </div>
+                  <div class="dfe-banner__image-container">
+                     <figure class="dfe-a-image dfe-a-image--cover">
+                        <picture class="dfe-a-image__picture">
+                           <source srcset="/assets/images/sticker.webp" type="image/webp">
+                           <img src="/assets/images/sticker.png"  alt="Badge showing an otter with a magnifying glass, surrounded by the words 'Department for Education User Research Community'">
+                        </picture>
+                     </figure>
+                  </div>
+               </div>
+   
+            </div>
+         </div>
+      </div>
+   </section>
+
 
    <section style="background: #ebf2f6;">
       <div class="dfe-width-container" style="padding: 40px 0px 40px 0px">
