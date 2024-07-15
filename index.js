@@ -88,9 +88,36 @@ app.use((req, res, next) => {
 });
 
 // 301 redirects
-app.get('/standards-and-principles', function (req, res) {
-  res.redirect(301, '/standards');
-})
+app.get('/standards-and-principles/', function (req, res) {
+  res.redirect(301, '/standards/');
+});
+app.get('/standards-and-principles/participant-safeguarding/', function (req, res) {
+  res.redirect(301, '/standards/participant-safeguarding/');
+});
+app.get('/standards-and-principles/personal-data-handling/', function (req, res) {
+  res.redirect(301, '/standards/personal-data-handling/');
+});
+app.get('/standards-and-principles/principles/', function (req, res) {
+  res.redirect(301, '/community-of-practice/principles');
+});
+app.get('/standards-and-principles/principles/principle-1', function (req, res) {
+  res.redirect(301, '/community-of-practice/principles');
+});
+app.get('/standards-and-principles/principles/principle-2', function (req, res) {
+  res.redirect(301, '/community-of-practice/principles');
+});
+app.get('/standards-and-principles/principles/principle-3', function (req, res) {
+  res.redirect(301, '/community-of-practice/principles');
+});
+app.get('/standards-and-principles/principles/principle-4', function (req, res) {
+  res.redirect(301, '/community-of-practice/principles');
+});
+app.get('/standards-and-principles/principles/principle-5', function (req, res) {
+  res.redirect(301, '/community-of-practice/principles');
+});
+app.get('/standards-and-principles/principles/principle-6', function (req, res) {
+  res.redirect(301, '/community-of-practice/principles');
+});
 
 // Render sitemap.xml in XML format
 app.get('/sitemap.xml', (_, res) => {
