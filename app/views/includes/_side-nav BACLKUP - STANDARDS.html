@@ -3,9 +3,6 @@
     title: "About our user research community",
     url: "/community-of-practice/"
   },{
-    title: "Our UR community principles",
-    url: "/community-of-practice/principles.html"
-  },{
     title: "Community of practice meetups",
     url: "/community-of-practice/community-meetups.html"
   },{
@@ -46,32 +43,39 @@
   }
 ] %}
 
-{% set ur_standards = [
+{% set standards_and_principles = [
   {
-    title: "UR standards",
-    url: "/standards/"
+    title: "User research standards and principles",
+    url: "/standards-and-principles/"
+  },{
+    title: "Our community principles for delivering user research",
+    url: "/standards-and-principles/our-community-principles/"
   }
 ] %}
-{% set ur_standards_standards = [
+{% set standards_and_principles__standards = [
+  {
+    title: "Inclusive research",
+    url: "/standards-and-principles/inclusive-research/"
+  },
   {
     title: "Participant recruitment",
-    url: "/standards/participant-recruitment/"
+    url: "/standards-and-principles/participant-recruitment/"
   },
   {
     title: "Research planning",
-    url: "/standards/research-planning/"
+    url: "/standards-and-principles/research-planning/"
   },
   {
     title: "Researcher safety",
-    url: "/standards/researcher-safety/"
+    url: "/standards-and-principles/researcher-safety/"
   },
   {
     title: "Safeguarding research participants",
-    url: "/standards/safeguarding-research-particpants/"
+    url: "/standards-and-principles/safeguarding-research-particpants/"
   },
   {
     title: "Secure handling of participant data",
-    url: "/standards/secure-handling-of-particpant-data/"
+    url: "/standards-and-principles/secure-handling-of-particpant-data/"
   }
 ] %}
 
@@ -229,10 +233,10 @@
   {% endif %}
   
 
-  {%- if selectedNav == "UR standards" %}
+  {%- if selectedNav == "Standards and principles" %}
     
     <ul class="dfe-vertical-nav__section">
-      {% for item in ur_standards %}
+      {% for item in standards_and_principles %}
         <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
           <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
@@ -241,7 +245,7 @@
 
     <h2 class="dfe-vertical-nav--section-header">DfE's user research standards</h2>
     <ul class="dfe-vertical-nav__section">
-      {% for item in ur_standards_standards %}
+      {% for item in standards_and_principles__standards %}
         <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
           <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>

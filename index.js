@@ -87,6 +87,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// 301 redirects
+app.get('/standards-and-principles', function (req, res) {
+  res.redirect(301, '/standards');
+})
+
 // Render sitemap.xml in XML format
 app.get('/sitemap.xml', (_, res) => {
   res.set({ 'Content-Type': 'application/xml' });
