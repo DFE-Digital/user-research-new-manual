@@ -105,6 +105,12 @@
     url: "/guidance/user-research-in-the-civil-service/researching-in-pre-election-periods.html"
   }
 ] %}
+{% set guidance__planning = [
+  {
+    title: "Writing a user research plan",
+    url: "/guidance/planning/"
+  }
+] %}
 {% set guidance__personal_data = [
   {
     title: "Introduction to managing personal data in user research",
@@ -274,6 +280,14 @@
         <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
           <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
+        {% endfor %}
+      {% endif %}
+
+      {%- if guidanceSection == "planning" %}
+        {% for item in guidance__planning %}
+          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+          </li>
         {% endfor %}
       {% endif %}
 
