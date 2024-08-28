@@ -12,7 +12,7 @@ module.exports = {
   
   assetPath: process.env.assetPath,
 
-  serviceName: 'User Research manual'
+  serviceName: 'User research manual'
 };
 
 

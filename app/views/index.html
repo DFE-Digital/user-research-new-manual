@@ -98,8 +98,9 @@
             <div class="govuk-grid-column-three-quarters">
                <p>Every user researcher working in DfE must always meet these standards. Also in development are standards for research planning, safety during research, inclusive research and user research recruitment.</p>
                <ul>
-                  <li><a href="/standards-and-principles/participant-safeguarding/" class="govuk-link govuk-link--no-visited-state govuk-body govuk-!-font-size-24">Participant safeguarding</a></li>
-                  <li><a href="/standards-and-principles/personal-data-handling/" class="govuk-link govuk-link--no-visited-state govuk-body govuk-!-font-size-24">Personal data handling</a></li>
+                  <li><a href="/standards/participant-safeguarding/" class="govuk-link govuk-link--no-visited-state govuk-body govuk-!-font-size-24">Participant safeguarding in user research standard</a></li>
+                  <li><a href="/standards/personal-data-handling/" class="govuk-link govuk-link--no-visited-state govuk-body govuk-!-font-size-24">Personal data handling in user research standard</a></li>
+                  <li><a href="/standards/planning/" class="govuk-link govuk-link--no-visited-state govuk-body govuk-!-font-size-24">User research planning standard</a></li>
                </ul>
             </div>
          </div>
@@ -145,26 +146,10 @@
          <div class="govuk-grid-row">
             <div class="govuk-grid-column-full">
                <h2 class="govuk-heading-l">Current user research job vacancies</h2>
-               {# Un-comment this if no current vacancies: 
-               <p>We don't currently know about any user research vacancies at DfE.</p>
-               <p>You can also check <a href="https://www.civilservicejobs.service.gov.uk/">Civil Service Jobs</a>.</p>
-               #}
-               <div class="dfe-grid-container">
-                  {# One card per vacancy. Comment out if no current vacancies: #}
-                  <div class="dfe-card">
-                     <div class="dfe-card-container">
-                        <h2 class="govuk-heading-m">
-                           <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="https://www.civilservicejobs.service.gov.uk/csr/jobs.cgi?jcode=1917838">Senior user researcher (Grade 7)</a>
-                        </h2>
-                        <p>ESFA Funding Service Delivery portfolio</p>
-                        <p>£53,669</p>
-                        <p>Bristol, Coventry, Darlington, London, Manchester, Sheffield</p>
-                        <p>Closing date: <br>1 September 2024, 11:55pm (Deadline extended)</p>
-                     </div>
-                  </div>
-                  {#  #}</div>
+               {% include 'includes/_vacancies.html' %}
             </div>
          </div>
       </div>
    </section>
 {% endblock %}
+
