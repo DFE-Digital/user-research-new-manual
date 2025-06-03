@@ -1,0 +1,494 @@
+{% extends "layouts/content-full-width.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set pageName = "Approved tools for user research" %}
+{% set pageDescription = "Tools you can use when planning and delivering user research in DfE" %}
+{% set zeroMainMargin = "true"%}
+
+{% block content %}
+
+{% markdown %}
+<style>
+table th:first-child { width:33%; }
+table th:last-child { width:20%; }
+table tr td:first-child { font-weight: bold;}
+</style>
+
+<section style="background: #f3f2f1;" id="mainheader">
+  <div class="dfe-width-container" style="padding-top: 45px; padding-bottom: 45px;">
+      <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+              <h1 class="govuk-heading-xl govuk-!-margin-bottom-6" style="color:black">{{pageName}}</h1>
+              <p class="govuk-body-l govuk-!-margin-bottom-0" style="color: black">{{pageDescription}}</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section style="background-color:#ffffff;" class="govuk-!-padding-top-7 govuk-!-padding-bottom-7">
+  <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+              <p class="govuk-body" id="contents">Tools that are approved and security-assured for use by user researchers in DfE. These tools are divided into the following three research phases and further subdivided by tooling need.</p>
+              <ul class="govuk-list">
+                <li>
+                  <a class="govuk-link" href="#planning-recruiting">Tools for planning and recruiting for research</a>
+                </li>
+                <li>
+                  <a class="govuk-link" href="#conducting-research">Tools for conducting research</a>
+                </li>
+                <li>
+                  <a class="govuk-link" href="#analysing-playback">Tools for analysing, playback, and legacy</a>
+                </li>
+                <li>
+                  <a class="govuk-link" href="#purchase-software">How to purchase approved software for you or your team</a>
+                </li>
+              </ul>
+              <h2 class="govuk-heading-l" id="planning-recruiting">Planning and recruiting for research</h2>
+              <p>Desk research, recruitment, planning, calendar booking and phone calling</p>
+              <h3>Desk research and user insights</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Sharepoint
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>Civil servants and contractors working in DfE can find high level user insights in the User Insight folder on the user research community Sharepoint. DfE civil servants have access to more specific insights in the working groups and projects folder on the community Sharepoint. Contact the research operations team if you require help with access to either of these locations on Sharepoint.
+                          </p>
+                          <p><a href="#new">User research community on Sharepoint</a></p>
+                          <a href="#new">Get help from the research operations team</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Virtual whiteboarding and flowcharting</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Lucid Suite
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>Guest users can access up to 5 boards a month. Any DfE civil servant or contractor can request a full Lucid Suite license through the IT Help Centre on Service Now.
+                          </p>
+                          <a href="https://dfe.service-now.com/ithelpcentre?id=sc_cat_item&sys_id=fc97c54f1b40c510199d6397b04bcbc8">Make a service request for Lucid Suite</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Participant recruitment</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Research operations team
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>The research operations team can help with participant recruitment through DfE's schools users panel or support with recruiting through DfE's centrally managed recruitment supplier. Contact research operations through DfE Slack.
+                          </p>
+                          <a href="#new">Get help from the research operations team</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Calendar booking for participants</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Calendly
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>A free account on Calendly can be created at any time and will allow up to one active booking link for unlimited participants. Calendly will integrate with your work calendar to only show available times and can be customised with buffer times and a maximum number of bookings per day can be set. Upgrades to the paid version should be discussed with your delivery manager.
+                          </p>
+                          <a href="#new">Create an account on Calendly</a>
+                        </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">
+                            <p>
+                                Microsoft Bookings
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                            <p>Microsoft Bookings  can be accessed as an "app" on Microsoft Teams. Bookings allows unlimited active booking links for unlimited participants. Bookings will integrate with your work calendar to only show available times and can be customised with buffer times. Bookings cannot be set to control the maximum number of sessions in a day. After adding the Bookings app to your Microsoft Teams client (click "Apps" in the left-hand bar in Teams and search "Bookings") you will need to request access to use Microsoft Bookings through the IT Help Centre on Service Now. There is not a dedicated service request option so you will need to explain on the form that you need access to Microsoft Bookings.
+                            </p>
+                            <a href="#new">Make a service request</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Phone calling</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Microsoft Teams phone calling
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>When phone calling is required, Microsoft Teams phone calling functionality is DfE's preferred option. Request access through the IT Help Centre on Service Now:
+                          </p>
+                          <a href="#new">Make a service request for Microsoft Teams phone calling</a>
+                        </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">
+                            <p>
+                                DfE mobile phone
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                            <p>A DfE mobile phone (work phone) might be appropriate when you are doing in-person research. Request a device through the IT Help Centre on Service Now. If a non-DfE employee (contractor) needs a mobile phone, business justification and approval from a Budget Holder should be attached to the request. Speak to your delivery manager for support.
+                            </p>
+                            <a href="#new">Make a service request for a mobile phone</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h2 class="govuk-heading-l govuk-!-margin-bottom-5 govuk-!-margin-top-7" id="conducting-research">Conducting research</h2>
+              <p class="govuk-body">Tools for conducting research. Video conferencing, surveys, data storage, and site analytics.</p>
+              <h3 id="video-conferencing">Video conferencing</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Microsoft Teams
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>Microsoft Teams is installed by default on all DfE devices. Many researchers choose to use Teams when doing remote moderated interview and usability test sessions. Please note that Microsoft Teams does not support the hiding of observers from participants. If more than 2 observers are required to be in a session, Teams may not be the best option.
+                          </p>
+                        </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">
+                            <p>
+                                Lookback
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                            <p>Lookback supports remote moderated and unmoderated interview sessions and usability tests, as well as video clipping, highlights, and the hiding of observers. Lookback is DfE assured and plans will need to be purchased through your team or portfolio. Read the following guidance if you would like to purchase Lookback for your team.
+                            </p>
+                            <a href="https://dfe.service-now.com/ithelpcentre?id=sc_cat_item&sys_id=fc97c54f1b40c510199d6397b04bcbc8">Purchase a license for a DfE approved user research tool (guidance)</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Data storage (including storage of video and audio)</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Team Sharepoint
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>Use your team sharepoint folders for most project-related data, such as recordings and notes. Talk to your delivery manager if you need support with your file storage options.</p>
+                        </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">
+                            <p>
+                                Physical hard drives, memory cards
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                            <p>In-person research might require video footage to be stored in a physical medium before being uploaded to the cloud. Speak to your delivery manager about getting hard drives or memory cards for this purpose. Read the following guidance for more help with getting the right tools for doing in-person research.</p>
+                            <a href="https://dfe.service-now.com/ithelpcentre?id=sc_cat_item&sys_id=fc97c54f1b40c510199d6397b04bcbc8">Make sure you have everything you need for doing in-person research (guidance)</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Survey publishing</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Qualtrics
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>You must follow the survey tool guidance to publish any survey that collects quantitative data. Following this guidance will help you gain you access to the correct tool.</p>
+                          <a href="#new">Surveys: how to access the correct tool (guidance)</a>
+                        </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">
+                            <p>
+                                Microsoft Forms
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                            <p>Microsoft Forms may only be used for purely qualitative surveys. Surveys that collect quantitative data (otherwise known as questionnaire surveys) must follow the survey tool guidance above.</p>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Site analytics</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Microsoft Clarity
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>Log in to Microsoft Clarity online using your DfE email account. You will need to ask your service designer to add your Microsoft account as a user through the Clarity project. If Microsoft Clarity is not yet set up for your service, you will need to ask a developer to install Clarity into your service before adding your account as a user.</p>
+                          <a href="#new">Log in to Microsoft Clarity</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h2 class="govuk-heading-l govuk-!-margin-bottom-5 govuk-!-margin-top-7" id="analysing-playback">Analysing, playback, and legacy</h2>
+              <p class="govuk-body">Video sharing, transcription, data analysis, and insight management tools. </p>
+              <h3>Video sharing</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Microsoft Stream
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>Microsoft Teams automatically saves recordings to Stream and video links can be shared directly or downloaded when clicking "open in Stream". There are no editing or anonymisation options available.
+                          </p>
+                        </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">
+                            <p>
+                                Lookback (sharing)
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                            <p>Lookback supports recording and clip sharing out of the box. This allows for highlights and time-stamped comments, as well as basic editing and anonymisation options such as blurring. Refer to <a href="#video-conferencing">video conferencing</a> above for more information.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Video editing</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Microsoft Clipchamp
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>Microsoft Clipchamp comes pre-installed with DfE devices running Windows or can be accessed through Microsoft Stream in browser (see above). Clipchamp supports basic video editing features such as trimming and screen blur.
+                          </p>
+                        </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">
+                            <p>
+                                Adobe Premiere Pro
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                            <p>Adobe Premiere Pro is suited to advanced video editing needs, including audio distortion and face/screen blurring or pixelation. Premiere Pro is specialist software and may require independent learning to understand how to use it. Access must be requested through the IT Help Centre on Service Now, under "Adobe Creative Cloud".
+                            </p>
+                            <a href="https://dfe.service-now.com/ithelpcentre?id=sc_cat_item&sys_id=f0b8e1391b0ab150b192ec69b04bcbe5&table=sc_cat_item">Make a service request for Adobe Creative Cloud</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Transcription</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Microsoft Teams
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>Microsoft Teams enables transcription automatically when a session is recorded.</p>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Insight management and qualitative data analysis</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Marvin
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>unknown</p>
+                          <a href="#new">(guidance)</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <h3>Quantitative data analysis</h3>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header">Tool</th>
+                        <th class="govuk-table__header" style="width: 70%">What you need to know</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                       <th class="govuk-table__header">
+                            <p>
+                                Qualtrics
+                            </p>
+                        </th>
+                        <td class="govuk-table__cell">
+                          <p>You will have to speak to a survey champion about using Qualtrics for quantitative data analysis. Find more information below.</p>
+                          <a href="#new">DfE Survey Champions</a>
+                        </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header">
+                           <p>
+                               Microsoft Excel
+                           </p>
+                       </th>
+                       <td class="govuk-table__cell">
+                         <p>Microsoft Excel is often appropriate for basic data analysis. Excel is included as part of the office suite on all DfE devices.
+                       </td>
+                   </tr>
+                </tbody>
+              </table>
+              <h2 id="purchase-software">
+                How to purchase approved software for you or your team
+              </h2>
+              <p>
+                Some software has been approved and security assured for use within DfE, but has not been purchased for department-wide use. For this software, licenses, seats, or sessions must be purchased at an individual, team or portfolio level. Before you start, make sure you understand your tooling need and whether a piece of software will fulfil your needs appropriately and cost-effectively.
+              </p>
+              <p>
+                Always speak to the lead user researcher in your portfolio to discuss your software need and to discuss whether tools that meet that need have already been purchased for use within your portfolio or business area. If licenses for software have already been purchased in your portfolio, it will usually be easier to extend the use of this software to your need.
+              </p>
+              <p>
+                If you lead user researcher thinks that an approved piece of software is required to be purchased for your need, you can discuss purchasing the software at an individual, team, or portfolio basis. You will need to make this decision based on multiple factors:
+              </p>
+              <ul>
+                <li>who in the portfolio needs to use this software</li>
+                <li>how often you will need to use this software</li>
+                <li>what budget you have approval for</li>
+                <li>which option represents best value for money for the department and for your portfolio</li>
+              </ul>
+              <p>Speak to other user researchers in your portfolio when determining these factors.</p>
+          </div>
+      </div>
+  </div>
+  <div data-sticky-element="" class="gem-c-contents-list-with-body__link-wrapper gem-c-contents-list-with-body__sticky-element--enabled gem-c-contents-list-with-body__sticky-element--stuck-to-window">
+    <div class="gem-c-contents-list-with-body__link-container" style="min-width: 1264px;">
+      <a class="govuk-link gem-c-back-to-top-link govuk-!-display-none-print" href="#mainheader">
+        <svg class="gem-c-back-to-top-link__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+        </svg>
+        Back to top
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+
+{% endmarkdown%}
+
+{% endblock %}

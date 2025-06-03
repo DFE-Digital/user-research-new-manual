@@ -1,0 +1,20 @@
+// This file should be included in an application prior to specific components
+// It provides govuk-frontend but adds no weight to the compiled CSS
+@import "govuk-frontend-settings";
+@import "govuk-template-link-focus-override";
+@import "margins";
+@import "css3";
+
+$govuk-suppressed-warnings: (
+  organisation-colours
+);
+
+$gem-secondary-button-colour: #00823b;
+$gem-secondary-button-hover-colour: darken($gem-secondary-button-colour, 5%);
+$gem-secondary-button-background-colour: govuk-colour("white");
+$gem-secondary-button-hover-background-colour: govuk-colour("light-grey");
+
+$gem-quiet-button-colour: govuk-colour("dark-grey");
+$gem-quiet-button-hover-colour: darken($gem-quiet-button-colour, 5%);
+
+$gem-hover-dark-background: #dddcdb;

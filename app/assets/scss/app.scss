@@ -13,11 +13,15 @@ $govuk-global-styles: true;
 @import './_hero.scss';
 @import './_topnav.scss';
 @import './_banner.scss';
-// @import './_cards.scss';
+@import './_cards.scss';
 @import './_listpanels.scss';
 @import './_subnav.scss';
 @import './_feedback.scss';
 @import './_ur.scss';
+@import './_contents-list.scss';
+@import './_back-to-top-link';
+@import './_contents-list-with-body';
+
 
 
 /* production/debugging */
