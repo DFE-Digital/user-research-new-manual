@@ -133,7 +133,7 @@ app.get('/robots.txt', (_, res) => {
 app.get('/downloads/:filename', (req, res) => {
   const filename = req.params.filename
 
-  if (!/^[a-zA-Z0-9-_]+\.(docx|pdf|xlsx)$/.test(filename)) {
+  if (!/^[a-zA-Z0-9-_]+\.(docx|pdf|xlsx|pptx)$/.test(filename)) {
     return res.status(400).send('Invalid file name')
   }
 
