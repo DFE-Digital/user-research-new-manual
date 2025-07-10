@@ -1,0 +1,161 @@
+{% extends "layouts/content-full-width.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set pageName = "Guidance" %}
+{% set pageDescription = "Guidance to help you understand processes in DfE user research" %}
+{% set zeroMainMargin = "true"%}
+
+{% block content %}
+
+{% markdown %}
+<style>
+table th:first-child { width:33%; }
+table th:last-child { width:20%; }
+table tr td:first-child { font-weight: bold;}
+</style>
+
+<section style="background: #f3f2f1;" id="mainheader">
+  <div class="dfe-width-container" style="padding-top: 45px; padding-bottom: 45px;">
+      <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+              <h1 class="govuk-heading-xl govuk-!-margin-bottom-6" style="color:black">{{pageName}}</h1>
+              <p class="govuk-body-l govuk-!-margin-bottom-0" style="color: black">{{pageDescription}}</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section style="background-color:#ffffff;" class="govuk-!-padding-top-7 govuk-!-padding-bottom-7">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full" data-module="ga4-link-tracker" data-ga4-link-tracker-module-started="true">
+          <div class="gem-c-cards">
+            <h2 class="gem-c-cards__heading govuk-heading-m gem-c-cards__heading--underline">
+              Topics
+            </h2>
+            <ul class="gem-c-cards__list gem-c-cards__list--two-column-desktop">
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="http://www.gov.uk">Find existing research insights</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">Find user insights that will help you focus your research and avoid duplication of work</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="http://www.gov.uk">What to include in your research plan</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">What you must include to follow DfE's user research planning standard</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="/new-prototype/guidance/recruit-participants">Recruit participants using a supplier</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">How to decide whether to use a supplier and what you'll need before you start</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="http://www.gov.uk">Purchase and use incentives</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">How to purchase and use incentives using our supplier</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="/new-prototype/guidance/plan-safe-research">Plan and conduct safe user research</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">Ensure the physical and psychological safety of you, your participants, and your team</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="/new-prototype/guidance/tooling">Use DfE-approved software and tools</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">A list of tools that are approved for use in DfE and information on how to purchase approved software</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="http://www.gov.uk">Get tools and equipment for conducting in-person research</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">Access the equipment you will need for conducting and recording in-person research</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="http://www.gov.uk">Gather consent correctly</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">How to gather consent from participants ethically and legally</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="http://www.gov.uk">Collect and manage data correctly</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">Set up data access, create a DPIA, and handle data responsibly and legally</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="http://www.gov.uk">Reuse, share, or disclose data</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">How to respond to requests for data from colleagues or participants</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="http://www.gov.uk">Use social media responsibly</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">When you may use social media in your research</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="/new-prototype/guidance/surveys">Get a survey peer reviewed and published</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">The process for creating and publishing a questionnaire survey using our approved tool</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="/new-prototype/guidance/report-concern">Report a safeguarding or criminal concern</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">What to do if you encounter a safeguarding or criminal concern during your research</p>
+                </div>
+              </li>
+              <li class="gem-c-cards__list-item">
+                <div class="gem-c-cards__list-item-wrapper">
+                  <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+                    <a class="govuk-link gem-c-cards__link gem-c-force-print-link-styles" href="http://www.gov.uk">Plan for research during a pre-election sensitivity period</a>
+                  </h3>
+                  <p class="govuk-body gem-c-cards__description">How to research during the sensitivity period in the weeks leading up to an election</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+
+{% endmarkdown%}
+
+{% endblock %}
