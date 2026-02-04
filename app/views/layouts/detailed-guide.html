@@ -1,0 +1,123 @@
+{% from 'header/macro.njk' import header %}
+{% from 'govuk/components/footer/macro.njk' import govukFooter %}
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+  <head>
+    <meta charset="utf-8">
+    <title>{% if seoPageName %}{{seoPageName}}{% elseif pageName %}{{pageName}}{%endif%} - User Research Manual - Department for Education</title>
+      <meta name="description" content="{% if seoPageDescription %}{{seoPageDescription}}{% elseif pageName %}{{pageDescription}}{%endif%}">
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+      <meta name="theme-color" content="#0b0c0c">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
+      <link href="/assets/css/app.min.css" rel="stylesheet">
+      <meta property="og:url" content="https://user-research.education.gov.uk"/>
+      <meta property="og:site_name" content="Department for Education User Research Manual"/>
+      <meta property="og:title" content="{{pageName}}"/>
+      <meta property="og:description" content="{% if seoPageDescription %}{{seoPageDescription}}{% elseif pageName %}{{pageDescription}}{%endif%}"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:locale" content="en_GB"/>
+      <meta property="og:image" content='https://design.education.gov.uk/assets/images/urm_og.png'/>
+
+      <meta name="google-site-verification" content="78BmMoejRsC4auIyTs5JLkClgxvWYGDAYMIikFxTNPA" />
+      {% block head %}{% endblock %}
+    </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLBNMJNWZ4"></script>
+
+    <body class="govuk-template__body ">
+      <script>
+        document.body.className = (
+          (document.body.className)
+          ? document.body.className + ' js-enabled'
+          : 'js-enabled');
+      </script>
+      {% include 'layouts/_cookiebanner.html'%}
+      <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+      {% include 'layouts/_topnav.html'%}
+      {% include 'layouts/_services.html'%}
+
+      {% block header %}
+
+        {% include 'layouts/_header.html'%}
+
+      {% endblock %}
+
+      {% block main %}
+        <div class="dfe-width-container ">
+          <div class="govuk-grid-row govuk-!-padding-top-7 govuk-!-padding-bottom-0">
+            <div class="govuk-grid-column-two-thirds">
+              <span class="govuk-caption-l">Guidance</span>
+              <h1 class="govuk-heading-xl govuk-!-margin-bottom-0">{{guidanceTopic}}</h1>
+              <!--<p class="govuk-body-l">{{pageDescription}}</p>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-width-container dfe-width-container">
+          <main class="govuk-main-wrapper" id="main-content" role="main">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <a data-module="govuk-skip-link" class="govuk-skip-link govuk-!-display-none-print" href="#guide-contents">Skip contents</a>
+                  <nav aria-label="Pages in this guide">
+                    <h2 class="govuk-body-s govuk-!-font-weight-regular govuk-!-margin-bottom-2">Contents</h2>
+                    <ol class="govuk-list govuk-list--bullet govuk-body-s">
+                      {% block contents %}{% endblock%}
+                    </ol>
+                  </nav>
+              </div>
+
+              <div class="govuk-grid-column-two-thirds govuk-!-padding-top-4" id="guide-contents">
+                <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">{{guidancePageName}}</h1>
+                {% block content %}{% endblock %}
+                <nav aria-label="Pagination" class="govuk-pagination govuk-pagination--block govuk-!-margin-top-7">
+                  {% if prevLinkURL %}
+                  <div class="govuk-pagination__prev"><a href="{{prevLinkURL}}" class="govuk-link govuk-pagination__link"><svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13"> <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path> </svg><span class="govuk-pagination__link-title">Previous</span><span class="govuk-visually-hidden">:</span><span style="padding-left: 25px;" class="govuk-pagination__link-label">{{prevLinkText}}</span></a></div>
+                  {% endif %}
+                  {% if nextLinkURL %}
+                  <div class="govuk-pagination__next"><a href="{{nextLinkURL}}" class="govuk-link govuk-pagination__link"><svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13"> <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path> </svg><span class="govuk-pagination__link-title">Next</span><span class="govuk-visually-hidden">:</span><span style="padding-left: 25px;" class="govuk-pagination__link-label">{{nextLinkText}}</span></a></div>
+                  {% endif %}
+                </nav>
+              
+              
+              </div>
+
+              <div class="govuk-grid-column-one-third">
+                <div style="border-top: 2px solid #347ca9;"></div>
+                <h2 class="govuk-heading-s govuk-!-padding-top-3">Related content</h2>
+                <div class="">
+                  {% block related %}{% endblock%}
+                </div>
+              </div>
+
+            </div>
+          </main>
+        </div>
+      {% endblock %}
+
+    </div>
+
+    {% block footer %}
+      {% include 'layouts/_footer.html'%}
+    {% endblock %}
+
+    <script src="/assets/js/all.min.js"></script>
+    <script src="/assets/js/cookies.min.js"></script>
+    <script src="/assets/js/feedback.min.js"></script>
+    <script src="/assets/js/dfefrontend.min.js"></script>
+    {% block scripts %}{% endblock %}
+    <script>
+      window
+        .GOVUKFrontend
+        .initAll()
+    </script>
+  </body>
+
+</html>
