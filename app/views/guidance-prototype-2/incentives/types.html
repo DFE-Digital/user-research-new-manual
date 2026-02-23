@@ -9,30 +9,32 @@
 {% set seoPageName = "Incentives: types you can offer" %}
 
 {% set prevLinkText = "Overview" %}
-{% set prevLinkURL = "index.html" %}
+{% set prevLinkURL = "/guidance-prototype-2/incentives/index.html" %}
 
 {% set nextLinkText = "User groups you can and can't offer monetary incentives to" %}
-{% set nextLinkURL = "user-groups.html" %}
+{% set nextLinkURL = "/guidance-prototype-2/incentives/user-groups.html" %}
+
+{% set pageRoot = "/guidance-prototype-2/incentives/" %}
 
 {# --------- Contents links ------------------------------------------------------ #}
 {% block contents %}
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="index.html">Overview</a>
+  <a href="{{pageRoot}}index.html">Overview</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
   Types of incentive you can offer in DfE user research
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="user-groups.html">User groups you can and can't offer monetary incentives to</a>
+  <a href="{{pageRoot}}user-groups.html">User groups you can and can't offer monetary incentives to</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="monetary-value.html">Value of monetary incentives you can offer</a>
+  <a href="{{pageRoot}}monetary-value.html">Value of monetary incentives you can offer</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="get-approval.html">Get approval to use monetary incentives</a>
+  <a href="{{pageRoot}}get-approval.html">Get approval to use monetary incentives</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="how-to-buy.html">How to buy monetary incentives for your project</a>
+  <a href="{{pageRoot}}how-to-buy.html">How to buy monetary incentives for your project</a>
 </li>
 {% endblock %}
 

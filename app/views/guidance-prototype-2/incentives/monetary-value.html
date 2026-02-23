@@ -9,30 +9,32 @@
 {% set seoPageName = "Incentives: monetary value" %}
 
 {% set prevLinkText = "User groups you can and can't offer monetary incentives to" %}
-{% set prevLinkURL = "user-groups.html" %}
+{% set prevLinkURL = "/guidance-prototype-2/incentives/user-groups.html" %}
 
 {% set nextLinkText = "Get approval to use monetary incentives" %}
-{% set nextLinkURL = "get-approval.html" %}
+{% set nextLinkURL = "/guidance-prototype-2/incentives/get-approval.html" %}
+
+{% set pageRoot = "/guidance-prototype-2/incentives/" %}
 
 {# --------- Contents links ------------------------------------------------------ #}
 {% block contents %}
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="index.html">Overview</a>
+  <a href="{{pageRoot}}index.html">Overview</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="types.html">Types of incentive you can offer in DfE user research</a>
+  <a href="{{pageRoot}}types.html">Types of incentive you can offer in DfE user research</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="user-groups.html">User groups you can and can't offer monetary incentives to</a>
+  <a href="{{pageRoot}}user-groups.html">User groups you can and can't offer monetary incentives to</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
   Value of monetary incentives you can offer
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="get-approval.html">Get approval to use monetary incentives</a>
+  <a href="{{pageRoot}}get-approval.html">Get approval to use monetary incentives</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="how-to-buy.html">How to buy monetary incentives for your project</a>
+  <a href="{{pageRoot}}how-to-buy.html">How to buy monetary incentives for your project</a>
 </li>
 {% endblock %}
 
