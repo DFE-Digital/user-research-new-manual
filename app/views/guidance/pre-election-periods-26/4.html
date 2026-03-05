@@ -1,0 +1,85 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set guidanceTopic = "Conducting user research in a pre-election period" %}
+{% set guidancePageName = "Get SRO approval" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/pre-election-periods-26/" %}
+
+{% set prevLinkText = "Identify any risks in your planned research" %}
+{% set prevLinkURL = "/guidance/pre-election-periods-26/3.html" %}
+
+{% set nextLinkText = "What to be aware of during user research sessions" %}
+{% set nextLinkURL = "/guidance/pre-election-periods-26/5.html" %}
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">When this guidance applies – dates and types of election</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Identify any risks in your planned research</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Get SRO approval
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">What to be aware of during user research sessions</a>
+</li>
+
+
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+To conduct any user research during a pre-election period (except with user groups where there is no pre-election risk) you must get approval from your project's senior responsible officer (SRO), or somebody else that they have delegated the decision to.
+
+This is the person who is accountable for risks in your project. Usually they will be your own Deputy Director in Digital, Design and Technology, although sometimes it will be the Deputy Director responsible for the policy your service is related to.
+
+Your delivery manager or lead user researcher can help you.
+
+You should send your SRO a brief email stating why you believe the research can take place, referring to this guidance.
+
+Your SRO will decide. If they are unsure, they can first speak to the head of user research. If they are still unsure, they will ask the Permanent Secretary's office for advice.
+
+If your SRO decides that your research should not take place, then you must delay it until after the election, or change your plans and go back to your SRO for reapproval.
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related links</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="https://www.gov.uk/government/publications/election-guidance-for-civil-servants">Election guidance for civil servants (gov.uk)</a>
+  </li>
+</ul>
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

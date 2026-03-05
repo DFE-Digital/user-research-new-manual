@@ -1,0 +1,97 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Incentives" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "When you can use incentives in DfE user research, and how to purchase them" %}
+
+{% set guidanceTopic = "Using incentives" %}
+{% set guidancePageName = "Types of incentive you can offer in DfE user research" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/incentives-26/" %}
+
+{% set prevLinkText = "Overview" %}
+{% set prevLinkURL = pageRoot + "index.html" %}
+{% set nextLinkText = "How to decide whether to offer incentives" %}
+{% set nextLinkURL = pageRoot + "3.html" %}
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Types of incentive you can offer in DfE user research
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">How to decide whether to offer incentives</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">User groups you can and can't offer monetary incentives to</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">Value of monetary incentives you can offer</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">How to purchase monetary incentives</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+
+### Non-monetary incentives
+
+Non-monetary incentives have no financial value to the recipient. Examples are thank-you letters, certificates, and anything else with a nominal cost to DfE.
+
+They could also be an offer to share future updates about the project with your participants or even invite them to playback sessions. You must get agreement to do this from your team and senior responsible officer (SRO). Your delivery manager can help you with this.
+
+You may offer non-monetary incentives to any user group. No approvals are needed to do this, although you must consider whether they could introduce ethical risks to participants, biases or other research risks.
+
+### Monetary incentives
+
+Monetary incentives have a financial value to the recipient. Examples could include gift cards, bank transfers, charity donations, prize draws, or reimbursements for expenses incurred by a participant.
+
+You may offer monetary incentives to most DfE user groups, with some exceptions.
+
+Types of monetary incentive you can offer are:
+
+- Shopping vouchers
+- Charity donations
+- Donation to a school or other education setting, in the form of vouchers for them to spend on library books, toys, or similar
+
+We don't currently offer any other type of non-voucher monetary incentive (e.g. bank transfers, pre-paid debit cards). To use a different type of incentive you must get approval from the head of user research. Speak to research operations first.
+
+You must never offer:
+
+- Physical cash
+- Online or physical shopping vouchers/cards where there is no choice of retailer in which to spend them in (i.e. a voucher for a single specific retailer or website)
+- Charity donations where there is only a single choice of charity to donate to.
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a>
+  </li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

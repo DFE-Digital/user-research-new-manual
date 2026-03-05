@@ -1,0 +1,92 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set guidanceTopic = "Conducting user research in a pre-election period" %}
+{% set guidancePageName = "When this guidance applies – dates and types of election" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/pre-election-periods-26/" %}
+
+{% set prevLinkText = "Overview" %}
+{% set prevLinkURL = "/guidance/pre-election-periods-26/index.html" %}
+
+{% set nextLinkText = "Identify any risks in your planned research" %}
+{% set nextLinkURL = "/guidance/pre-election-periods-26/3.html" %}
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  When this guidance applies – dates and types of election
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Identify any risks in your planned research</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">Get SRO approval</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">What to be aware of during user research sessions</a>
+</li>
+
+
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+This guidance applies to any user research activity, including recruitment of participants, taking place in a pre-election period before:
+
+- UK general elections
+- local and mayoral elections in England
+- any other UK-wide elections or referendums.
+
+Because education policy is devolved, it only applies to assembly or other elections in Scotland, Wales and Northern Ireland if your service will be used in those countries, your policy area covers them, or you plan to conduct research with people who live there.
+
+### Pre-election period start and end dates
+
+A pre-election period typically starts four to six weeks before the election. It will be formally announced on GOV.UK and we will republish this in the DfE user research community Teams channel.
+
+You can usually restart any paused user research the day after the election.
+
+However, following some elections instances restrictions may continue for a few more days. Check with your SRO and look out for announcements on the DfE intranet.
+
+### When you know the election date in advance, plan low risk research
+
+In most years there are local and/or mayoral elections in England in the first week of May.
+
+You should therefore plan lower-risk research for a pre-election period in April or, if this is not possible, raise it as a risk to your delivery manager.
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related links</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="https://www.gov.uk/government/publications/election-guidance-for-civil-servants">Election guidance for civil servants (gov.uk)</a>
+  </li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

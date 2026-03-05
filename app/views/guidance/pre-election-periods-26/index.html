@@ -1,0 +1,101 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set guidanceTopic = "Conducting user research in a pre-election period" %}
+{% set guidancePageName = "Overview" %}
+{% set seoPageName = guidanceTopic %}
+{% set pageDescription = "How to decide whether research can take place or must be paused in the weeks before an election" %}
+
+{% set pageRoot = "/guidance/pre-election-periods-26/" %}
+
+{% set nextLinkText = "When this guidance applies – dates and types of election" %}
+{% set nextLinkURL = pageRoot + "2.html" %}
+
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Overview
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">When this guidance applies – dates and types of election</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Identify any risks in your planned research</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">Get SRO approval</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">What to be aware of during user research sessions</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+<div class="govuk-warning-text">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Warning</span>
+      Breaking pre-election rules could be a serious disciplinary offence.
+    </strong>
+</div>
+
+In the weeks before an election (called the pre-election period, pre-election sensitivity period, or PESP) you may need to pause or change some of your planned research.
+
+Before conducting any user research during a pre-election period, you must:
+
+- Use this guidance to help decide whether your planned user research activity is appropriate
+- Get approval from your project's senior responsible officer (SRO) or someone they delegate this decision to
+
+If you or your SRO decides that the research should not take place, you must pause the research until after the pre-election period or change your plans to make it lower risk.
+
+### General principles
+
+The Cabinet Office election guidance for civil servants is published on GOV.UK before every election. It sets out the basic principles that we must all follow, but it does not specifically relate them to user research or wider digital and service design activity.
+
+The principles are:
+
+- could an activity be seen to call into question your political impartiality or give rise to criticism that public resources are being used for party political purposes?
+- could an activity be seen to compete with the election campaign for public attention?
+
+This guidance is intended to help you and the people accountable for risks in your project apply these principles to user research in DfE.
+
+
+<div class="govuk-inset-text">
+<h3 class="govuk-heading-s">A note on the word 'Purdah'</h3>
+<p>The term 'purdah' was historically used in the UK to describe pre-election periods.</p>
+<p>Although you may still hear this word used unofficially across the Civil Service, some people find it offensive because of <a href="https://dictionary.cambridge.org/dictionary/english/purdah">its historical usage and etymology</a>.</p>
+</div>
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related links</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="https://www.gov.uk/government/publications/election-guidance-for-civil-servants">Election guidance for civil servants (gov.uk)</a>
+  </li>
+</ul>
+
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

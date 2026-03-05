@@ -1,0 +1,84 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Incentives" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "When you can use incentives in DfE user research, and how to purchase them" %}
+
+{% set guidanceTopic = "Using incentives" %}
+{% set guidancePageName = "Overview" %}
+{% set seoPageName = guidanceTopic %}
+
+{% set pageRoot = "/guidance/incentives-26/" %}
+
+{% set nextLinkText = "Types of incentive you can offer in DfE user research" %}
+{% set nextLinkURL = pageRoot + "2.html" %}
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Overview
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Types of incentive you can offer in DfE user research</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">How to decide whether to offer incentives</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">User groups you can and can't offer monetary incentives to</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">Value of monetary incentives you can offer</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">How to purchase monetary incentives</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+
+<div class="govuk-inset-text">
+<p>This guidance covers the use of incentives in user research in DfE only. Rules and processes for using incentives in other DfE research professions are available on the intranet.</p>
+</div>
+
+You can use incentives in DfE user research.
+
+Incentives are payments, gifts or rewards offered to user research participants to:
+
+- increase participation rates or reduce drop-out rates
+- ensure a representative sample, including access to hard-to-reach groups.
+
+They are intended as a 'thank you' for participants, or to compensate them for their time when taking part in user research.
+
+Incentives can be monetary (e.g. vouchers) or non-monetary (e.g. small gifts). There are different rules for using monetary and non-monetary incentives.
+
+To use monetary incentives, you will need budget approval in your team and you must only buy them from our approved suppliers, via the research operations team.
+
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a>
+  </li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

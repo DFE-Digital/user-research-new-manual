@@ -1,0 +1,109 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Incentives" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "When you can use incentives in DfE user research, and how to purchase them" %}
+
+{% set guidanceTopic = "Using incentives" %}
+{% set guidancePageName = "How to decide whether to offer incentives" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/incentives-26/" %}
+
+{% set prevLinkText = "Types of incentive you can offer in DfE user research" %}
+{% set prevLinkURL = pageRoot + "2.html" %}
+{% set nextLinkText = "User groups you can and can't offer monetary incentives" %}
+{% set nextLinkURL = pageRoot + "4.html" %}
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Types of incentive you can offer in DfE user research</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  How to decide whether to offer incentives
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">User groups you can and can't offer monetary incentives to</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">Value of monetary incentives you can offer</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">How to purchase monetary incentives</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+To only offer any incentive (monetary or non-monetary) you must be confident that they will not create unmitigated ethical risks, or introduce biases or flaws into your research.
+
+In addition, to offer monetary incentives you must be confident that they represent value for money. Only offer them if you believe that they are necessary and your research goals may be harmed without the use of them.
+
+### Ethical and research risks of using incentives
+
+The use of any incentive, but particularly monetary incentives, can introduce ethical risks to participants and biases or flaws into your research. You must consider these risks and how you will mitigate them. If you are unable to mitigate them, you must not offer incentives.
+
+Examples of risks with DfE user groups could include (but are not limited to):
+
+- Monetary incentives, particularly bank transfers or cash, are considered income, impacting an individuals' benefit claim calculations
+- People in financial difficulty may agree to participate in research they are not comfortable with or interested in
+- A child or an adult with reduced capacity may be attracted by a small gift while not fully understanding what is being asked of them
+- People with low digital literacy or access may struggle to access any online incentive method, e.g. shopping vouchers
+- Offering incentives could increase or exacerbate implicit power imbalances in some research (e.g. DfE researching with a head teacher in a struggling state-funded school)
+
+This is not a comprehensive list of all ethical risks. You must think about your own user groups and methodology.
+
+### Examples of when monetary incentives might be appropriate
+
+- You believe, based on previous experience or initial exploration of your user population, that you will struggle to recruit within your project timelines, or that some user groups will be excluded from your research.
+- Your research method requires a significant effort or time commitment from participants (for example a longitudinal study requiring repeated activities over a number of weeks).
+- There will be a cost to the participant to take part in research, e.g. you are asking them to travel to a research lab or DfE office.
+
+They may be additional situations where you need to use them. If you are not sure, get advice from your lead user researcher or the head of user research.
+
+#### Using a recruitment supplier who offers incentives
+
+Specialist third-party recruitment suppliers generally do not accept briefs without offering incentives to participants.
+
+This is an acceptable reason to use incentives in your research.
+
+The exception is if you are recruiting a user group that you must not pay incentives to. In this case, you may not be able to use the third-party supplier. Speak to research operations, your lead user researcher or the head of user research for advice.
+
+### Safety risks when handling monetary incentives
+
+If you are conducting in-person research and carrying physical monetary incentives (e.g. physical shopping vouchers), there is a physical safety risk to you and any team members accompanying you.
+
+You must have a plan for how you will keep safe and include it as a risk in your user research plan document.
+
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a>
+  </li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

@@ -1,0 +1,123 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set guidanceTopic = "Conducting user research in a pre-election period" %}
+{% set guidancePageName = "Identify any risks in your planned research" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/pre-election-periods-26/" %}
+
+{% set prevLinkText = "When this guidance applies – dates and types of election" %}
+{% set prevLinkURL = "/guidance/pre-election-periods-26/2.html" %}
+
+{% set nextLinkText = "Get SRO approval" %}
+{% set nextLinkURL = "/guidance/pre-election-periods-26/4.html" %}
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">When this guidance applies – dates and types of election</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Identify any risks in your planned research
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">Get SRO approval</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">What to be aware of during user research sessions</a>
+</li>
+
+
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+
+Deciding whether to conduct research during a pre-election period is a risk assessment. You must make a recommendation to your senior responsible officer (SRO), who will decide whether to accept any risk or delay the research.
+
+Use the guidance on this page to identify risks. Get advice from a lead user researcher or head of user research if you are not sure.
+
+### Low pre-election risk
+
+Much standard user research activity carries a low pre-election risk:
+
+- The primary intention of the user research is to gather user needs or observe behaviour
+- The user research is for a service in discovery, alpha, beta or live
+- Remote, unmoderated research methods
+- Offering incentives to participants
+    - You can continue to offer incentives during a pre-election period, following our normal rules and guidance.
+
+### Higher pre-election risk
+
+If your planned user research includes any of the following activities or contexts, then it is higher risk and your SRO may decide it cannot take place:
+
+- The primary intention of the research is attitudinal, gathering people's opinions about a service or policy
+- The user research is for a policy that hasn't been announced to the public yet
+- Conducting research or recruitment in a public place
+    - Examples could include pop-up research in the foyer of a college or playground in a school, or recruiting participants in-person in the publicly accessible areas of a family hub
+    - You can still conduct interviews in private rooms in public buildings, e.g. in a school office
+- Recruitment activities using official departmental communications channels, e.g. email newsletters or social media channels
+    - you can still use DfE's specialist recruitment supplier
+    - you can contact anybody who has previously agreed or opted-in to being contacted for research, e.g. from a DfE panel or your own list of previous participants
+- The research is related to a service, policy or user group that is expected to be controversial, high-profile or a party-political topic during the election campaign
+    - Get advice from your lead user researcher or policy colleagues for their view on whether this is likely to be the case
+    - Your SRO will make this decision, getting further advice if they need to using formal DfE channels
+
+### Risks of delaying user research during a pre-election period
+
+Delaying user research can cause other project risks. If this is the case, your SRO may decide that the risk of delaying the research is greater than any risk of you going ahead.
+
+Examples are:
+
+- Delaying user research would delay a project delivery, wasting public money
+    - E.g. it would block a managed service resource from delivering their work
+- Situations where delaying the user research means a service or feature may be released not meeting DfE or government standards or law
+    - E.g. a new feature is released to a public beta service before it has been tested with users with access needs
+
+### No pre-election risk (no approval needed)
+
+User research with some user groups carries no risk. You do not need SRO approval to conduct any user research with these groups during a pre-election period.
+
+- People living outside of the UK and who are not UK voters
+- Internal research with DfE civil servants or other people currently working in DfE
+- Civil servants in other government departments, and public officials in local authorities or devolved administrations
+    - You should reconfirm with participants that they are able to take part, as they may be restricted by their own pre-election guidance
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related links</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="https://www.gov.uk/government/publications/election-guidance-for-civil-servants">Election guidance for civil servants (gov.uk)</a>
+  </li>
+</ul>
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

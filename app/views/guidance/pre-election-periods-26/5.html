@@ -1,0 +1,80 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set guidanceTopic = "Conducting user research in a pre-election period" %}
+{% set guidancePageName = "What to be aware of during user research sessions" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/pre-election-periods-26/" %}
+
+{% set prevLinkText = "Get SRO approval" %}
+{% set prevLinkURL = "/guidance/pre-election-periods-26/4.html" %}
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">When this guidance applies – dates and types of election</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Identify any risks in your planned research</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">Get SRO approval</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  What to be aware of during user research sessions
+</li>
+
+
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+You do not need to significantly change your discussion guide or your normal approach to research sessions during a pre-election period.
+
+At the start of the session you should tell the participant that, due to the election, there may be topics they raise that you can't discuss.
+
+You should take extra care with how you respond to participants' questions. Things you say that would normally be accepted as objective and neutral could be interpreted differently in a pre-election period.
+
+If they do raise a party political or controversial topic during the session, say that you can't comment. This could include local issues that you weren't aware of, for example a media controversy related to a local school.
+
+If you are worried or uncomfortable with something a participant is saying and you are unable to change the topic, you should politely end the session.
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related links</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="https://www.gov.uk/government/publications/election-guidance-for-civil-servants">Election guidance for civil servants (gov.uk)</a>
+  </li>
+</ul>
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

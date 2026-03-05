@@ -75,7 +75,7 @@
               </div>
 
               <div class="govuk-grid-column-two-thirds govuk-!-padding-top-4" id="guide-contents">
-                <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">{{guidancePageName}}</h1>
+                <h2 class="govuk-!-margin-bottom-4">{{guidancePageName}}</h2>
                 {% block content %}{% endblock %}
                 <nav aria-label="Pagination" class="govuk-pagination govuk-pagination--block govuk-!-margin-top-7">
                   {% if prevLinkURL %}
@@ -91,10 +91,7 @@
 
               <div class="govuk-grid-column-one-third">
                 <div style="border-top: 2px solid #347ca9;"></div>
-                <h2 class="govuk-heading-s govuk-!-padding-top-3">Related content</h2>
-                <div class="">
                   {% block related %}{% endblock%}
-                </div>
               </div>
 
             </div>

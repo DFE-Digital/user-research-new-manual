@@ -1,0 +1,128 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Incentives" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "When you can use incentives in DfE user research, and how to purchase them" %}
+
+{% set guidanceTopic = "Using incentives" %}
+{% set guidancePageName = "User groups you can and can't offer monetary incentives" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/incentives-26/" %}
+
+{% set prevLinkText = "How to decide whether to offer incentives" %}
+{% set prevLinkURL = pageRoot + "3.html" %}
+{% set nextLinkText = "Value of monetary incentives you can offer" %}
+{% set nextLinkURL = pageRoot + "5.html" %}
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Types of incentive you can offer in DfE user research</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">How to decide whether to offer incentives</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  User groups you can and can't offer monetary incentives to
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">Value of monetary incentives you can offer</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">How to purchase monetary incentives</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+
+You can offer monetary incentives to most DfE user groups.
+
+However, there are some groups that you must not offer them to, and some where you may need to get additional advice before deciding to offer them.
+
+### Groups you must not offer monetary incentives to
+
+You must never offer a monetary incentive to:
+
+- anybody currently employed by DfE
+- anybody currently working in or on behalf of DfE as a contractor or supplier
+- family members, friends or other people that you have a pre-existing close personal relationship with
+    - this applies to you and anybody else who may attend the research
+- prisoners or other people in detention including young offenders
+- asylum seekers, undocumented migrants, or immigrants with no recourse to public funds
+- any person with a professional gatekeeping responsibility over a child or adult with reduced capacity who is taking part in your research
+    - Examples could include the participant's social worker, care home worker, teacher, etc.
+- any child or young person taking part in research in a state-funded school during school hours
+- pre-school or primary school age children
+    - You may offer an incentive to a parent, guardian or non-paid carer (not including anybody who is acting in a professional capacity, e.g. the participant's social worker, care home worker, teacher, etc.)
+
+### Young people and adults with reduced capacity
+
+If necessary, you can offer monetary incentives to young people (older than primary school age) and adults with reduced capacity.
+
+You must be confident that they will understand what the incentive is (e.g. that it is not to pay for their views). This will reduce the risk of coercion and of the participant saying what they think they want you to hear.
+
+Double check that the incentive value you are offering is appropriate.
+
+Get advice from your lead user researcher or head of user research if you are not sure and, if in doubt, do not offer monetary incentives.
+
+
+### Teachers, school or college staff and other public servants
+
+You can offer monetary incentives to public servants and other people employed and paid directly or indirectly by public money.
+
+<div class="govuk-inset-text">
+<p>Some participants in these user groups may decline to accept a monetary incentive because of guidance or policy in their own organisation. It is their responsibility to check their own guidance.</p>
+</div>
+
+For these user groups, in addition to being confident that their use will represent value for money you should be consider whether their use could be perceived as a controversial use of public money. Be particularly aware of any current major news stories involving your user groups and DfE or the wider government, and double check that the incentive value you are offering is appropriate.
+
+Get advice from your lead user researcher or policy colleagues if you are not sure and if in doubt, do not offer monetary incentives.
+
+Alternative options for individuals in these user groups include offering the incentive to their organisation (e.g. to a school to buy library books) or offering a charity donation.
+
+These user groups include:
+
+- teachers and other staff currently employed in state-funded education settings
+- civil servants outside of DfE, and contractors and suppliers currently working for other government departments and agencies
+- local authority employees, and contractors and suppliers currently working for local authorities
+- social workers
+- doctors and other care professionals
+
+### People outside of the UK
+
+You can offer monetary incentives to non-UK based user research participants, e.g. potential users of an international teacher recruitment service.
+
+There are some countries we are not able or not allowed to offer incentives in. Check with research operations before planning your research.
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a>
+  </li>
+</ul>
+
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

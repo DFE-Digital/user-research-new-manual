@@ -1,0 +1,86 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Incentives" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "When you can use incentives in DfE user research, and how to purchase them" %}
+
+{% set guidanceTopic = "Using incentives" %}
+{% set guidancePageName = "Value of monetary incentives you can offer" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/incentives-26/" %}
+
+{% set prevLinkText = "User groups you can and can't offer monetary incentives" %}
+{% set prevLinkURL = pageRoot + "4.html" %}
+{% set nextLinkText = "How to purchase monetary incentives" %}
+{% set nextLinkURL = pageRoot + "6.html" %}
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Types of incentive you can offer in DfE user research</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">How to decide whether to offer incentives</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">User groups you can and can't offer monetary incentives to</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Value of monetary incentives you can offer
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">How to purchase monetary incentives</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+There is no standard monetary incentive value. The amount you offer will depend on the user group, nature of the research, and other factors.
+
+You should aim to offer the minimum amount necessary to encourage participation. Get advice from research operations, your lead user researcher, or speak to other user researchers who have recruited the same user groups.
+
+If you require the participant to travel to take part in the research, make sure your incentive will cover their costs.
+
+### Consistency of amount
+
+Try to offer the same incentive amount to people from the same user groups throughout your research, but don't worry if this isn't always possible.
+
+Examples of where you may not be able to offer consistent incentives:
+
+- you have an urgent need to recruit quickly
+- you need to ask one group of participants for a different time commitment to others
+- you are finding that one segment of your user population is significantly more difficult to recruit than others
+- you are recruiting some participants yourself and others via a third-party recruitment supplier who is offering a higher incentive amount.
+
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Lead user researchers and head of user research</a>
+  </li>
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a>
+  </li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+
