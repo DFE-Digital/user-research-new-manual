@@ -119,6 +119,15 @@ app.get('/standards-and-principles/principles/principle-6', function (req, res) 
   res.redirect(301, '/community-of-practice/principles');
 });
 
+app.get('/guidance/user-research-in-the-civil-service/researching-in-pre-election-periods', function (req, res) {
+  res.redirect(301, '/guidance/pre-election-periods-26');
+});
+app.get('/guidance/recruiting-participants/paying-incentives', function (req, res) {
+  res.redirect(301, '/guidance/incentives-26');
+});
+
+
+
 // Render sitemap.xml in XML format
 app.get('/sitemap.xml', (_, res) => {
   res.set({ 'Content-Type': 'application/xml' });
