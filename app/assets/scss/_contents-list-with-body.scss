@@ -1,0 +1,81 @@
+@import "govuk_publishing_components/individual_component_support";
+
+.govuk-frontend-supported .gem-c-contents-list-with-body__sticky-element {
+  position: absolute;
+  bottom: 0;
+
+  &--stuck-to-window {
+    bottom: 0;
+    position: fixed;
+  }
+
+  &--enabled {
+    transition: opacity, .3s, ease;
+    opacity: 1;
+
+    @include govuk-media-query($until: tablet) {
+      position: static;
+    }
+  }
+
+  &--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.gem-c-contents-list-with-body__link-container {
+  margin: 0 auto;
+  padding: 0;
+
+  @include govuk-media-query($from: tablet) {
+    max-width: 1024px;
+  }
+
+  .gem-c-back-to-top-link {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.gem-c-contents-list-with-body__list-container {
+  margin-bottom: govuk-spacing(3);
+
+  @include govuk-media-query($from: tablet) {
+    margin-bottom: govuk-spacing(8);
+  }
+}
+
+.gem-c-contents-list-with-body__link-wrapper {
+  padding-bottom: govuk-spacing(2);
+
+  .gem-c-back-to-top-link {
+    padding-bottom: govuk-spacing(2);
+  }
+}
+
+.gem-c-contents-list-with-body__link-wrapper.gem-c-contents-list-with-body__sticky-element--stuck-to-window {
+  background-color: govuk-colour("light-grey");
+  bottom: -1px; // 'Fix' for anomalous 1px margin which sporadically appears below this element.
+  left: 0;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  @include govuk-media-query($from: tablet) {
+    padding-left: govuk-spacing(2);
+  }
+
+  .gem-c-back-to-top-link {
+    margin-bottom: 0;
+    padding: govuk-spacing(3);
+    width: 66%;
+
+    @include govuk-media-query($from: tablet) {
+      padding: govuk-spacing(4);
+    }
+  }
+}
