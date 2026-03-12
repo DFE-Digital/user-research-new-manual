@@ -119,6 +119,10 @@ app.get('/standards-and-principles/principles/principle-6', function (req, res) 
   res.redirect(301, '/community-of-practice/principles');
 });
 
+
+app.get('/community-of-practice/ur-slack-channels', function (req, res) {
+  res.redirect(301, '/community-of-practice/ur-community-channels');
+});
 app.get('/guidance/user-research-in-the-civil-service/researching-in-pre-election-periods', function (req, res) {
   res.redirect(301, '/guidance/pre-election-periods-26');
 });
