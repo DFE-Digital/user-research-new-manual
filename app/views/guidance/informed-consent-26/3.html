@@ -1,0 +1,106 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "How to ensure user research participants understand and have control over what they're agreeing to" %}
+
+{% set guidanceTopic = "How to gather and store informed consent" %}
+{% set guidancePageName = "When to gather consent from a parent, legal guardian or other third-party" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/informed-consent-26/" %}
+
+{% set prevLinkText = "When to gather consent" %}
+{% set prevLinkURL = pageRoot + "2.html" %}
+{% set nextLinkText = "Where to find the approved consent forms" %}
+{% set nextLinkURL = pageRoot + "4.html" %}
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">When to gather consent</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  When to gather consent from a parent, legal guardian or other third-party
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">Where to find the approved consent forms</a>
+</li>
+<!--<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">How and when to gather verbal consent</a>
+</li>-->
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">How to tailor an approved consent form or create a new one</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}7.html">How to store a record of consent in DfE SharePoint</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}8.html">What to do if a participant withdraws consent</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+You must gather consent from a person other than the main participant when the participant cannot provide informed consent themselves.
+
+This includes:
+
+- Children under 16 years old
+- Adults with reduced capacity (i.e. have limited decision‑making capacity due to disability, illness, or temporary conditions)
+
+In these situations, you must gather informed consent from a person who is legally authorised to act, make decisions, or provide consent on behalf of the participant.
+
+This could be a parent or legal guardian, or somebody else with a professional gatekeeping responsibility over the participant (e.g. the participant's social worker, care home worker, teacher, etc).
+
+	<div class="govuk-inset-text">
+	If you are conducting research with children in a school or other educational establishment, ask them how they want you to gather consent under their own policies. You may be able to gather consent from a teacher or school leadership, or they may require you to gather consent from individual parents/guardians.
+	</div>
+
+As well as gaining this consent, you must also gain consent from the participant. Explain the research to them in a way that they are likely to understand.
+
+You must always act in the participant's best interests and respect their wishes, even when consent is given on their behalf. If they do not want to take part, you must not conduct the research with them.
+
+### Situations where an unexpected third-party joins or is present in research
+
+If your research inadvertently involves another person or reveals information about them, you must gain informed consent from that person or remove their data from your research.
+
+For example, an unexpected person may join a remote interview part-way through, or someone talking part in a diary study may share a photo or video that includes other people.
+
+If you are unable to contact the third-party to gain their consent, or if they are not happy to give consent, then you must remove or obfuscate their data. For example, you could edit them out of a session recording and remove anything they say from the transcript, or you could blur them out in photos.
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</li>
+  <li><a class="govuk-link" href="/community-of-practice/community-initiatives-and-interest-groups#consent-working-group">Informed consent working</li> 
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related content</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <!--<li><a class="govuk-link" href="/guidance/personal-data-26/">How to store and manage personal data</li>-->
+  <li><a class="govuk-link" href="https://dfedigital.blog.gov.uk/2025/07/16/creating-3-principles-of-informed-consent-for-user-research/">Blog post about our DfE user research informed consent principles</li>
+</ul>
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

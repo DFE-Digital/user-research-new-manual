@@ -129,6 +129,9 @@ app.get('/guidance/user-research-in-the-civil-service/researching-in-pre-electio
 app.get('/guidance/recruiting-participants/paying-incentives', function (req, res) {
   res.redirect(301, '/guidance/incentives-26');
 });
+app.get('/guidance/ethics-and-safeguarding/gaining-informed-consent', function (req, res) {
+  res.redirect(301, '/guidance/informed-consent-26');
+});
 
 
 

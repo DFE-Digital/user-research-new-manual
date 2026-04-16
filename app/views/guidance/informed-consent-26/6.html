@@ -1,0 +1,149 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "How to ensure user research participants understand and have control over what they're agreeing to" %}
+
+{% set guidanceTopic = "How to gather and store informed consent" %}
+{% set guidancePageName = "How to tailor an approved consent form or create a new one" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+
+{% set pageRoot = "/guidance/informed-consent-26/" %}
+
+{% set prevLinkText = "Where to find the approved consent forms" %}
+{% set prevLinkURL = pageRoot + "4.html" %}
+{% set nextLinkText = "How to store a record of consent in DfE SharePoint" %}
+{% set nextLinkURL = pageRoot + "7.html" %}
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">When to gather consent</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">When to gather consent from a parent, legal guardian or other third-party</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">Where to find the approved consent forms</a>
+</li>
+<!--<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">How and when to gather verbal consent</a>
+</li>-->
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  How to tailor an approved consent form or create a new one
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}7.html">How to store a record of consent in DfE SharePoint</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}8.html">What to do if a participant withdraws consent</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+You can adjust the approved consent forms to the specific context of your research. 
+
+In some cases, you may need to create a new consent form or use a different approach to gathering consent. You must get approval to do this.
+
+### Tailor an approved consent form to your research
+
+The sections you can change, by adding or removing options given to participants, are marked in the templates. Do not make any other changes.
+
+
+#### Examples of needing to tailor a consent form
+
+<div class="govuk-inset-text">
+You are conducting research about a sensitive topic with a user group that you know may feel uncomfortable being recorded. To make the participants feel more comfortable you will use voice changing technology in any video clips you use. You add this to the information sheet.
+</div>
+
+<div class="govuk-inset-text">
+You are usability testing a prototype. If any participant said "no" to their screen being recorded, the research session would have no value to your team. Therefore, you make it clear to participants that screen recording will take place but you remove the opt-out option from the form.
+</div>
+
+See also:
+
+- [Bank of case studies about how researchers address various consent scenarios (DfE SharePoint users only)](https://educationgovuk.sharepoint.com/:p:/r/sites/lvewp00449/WorkplaceDocuments/2.%20Templates%20and%20resources/Consent%20forms/2.%20Case%20studies%20and%20tools/Bank%20of%20informed%20consent%20case%20studies.pptx?d=wcaa5a8e7261440f9a364446e6e3b55a0&csf=1&web=1&e=eWXIBT)
+
+### Translating a consent form into another language
+
+If you are conducting user research with people whose first language is not English and who may not be able to read English at a reading age of 10-11, then you can translate an approved consent form into the participant's language. You can do this by using a commercial translation service
+
+You can also arrange for an interpreter to attend the session to read the information sheet to the participant and collect their responses in the form.
+
+You will need budget in your team to procure language service. Speak to your delivery manager or lead user researcher to understand how to do this in your business area, or to research operations for any other advice.
+
+See also:
+
+- [Conducting research with users with limited English or sign language](https://user-research.education.gov.uk/guidance/inclusive-research/limited-english-and-sign-language#how-to-use-language-services)
+
+#### Do not rely on AI or automated translation for consent forms
+
+You must not use AI or automated translations (e.g. Google Translate) without a human confirming that it is a fully accurate translation. Errors or changes of context in the text may lead to participants not being properly informed about their involvement in the research or understanding their data protection rights.
+
+
+### Create a new consent form or a different approach to gathering informed consent
+
+
+In some cases, tailoring an existing approved consent form may not be enough to meet the specific contextual needs of your research.
+
+If that is the case, you can create a new consent form or use a different approach to gathering consent. Any new consent form must be approved by research operations to ensure it meets the DfE UR informed consent principles and our legal obligations under UK data laws.
+
+	<div class="govuk-inset-text">
+	If you have an idea for a different or innovative way to gather informed consent (i.e. one of the approved consent forms does meet your needs, but you want to experiment with a different approach) you must speak to the informed consent working group as well as research operations. They will confirm that it meets our informed consent principles and help you plan how to experiment with it appropriately and ethically.
+	</div>
+
+#### 1\. Speak to research operations before you start
+
+They will give advice and initial feedback on your planned approach, check whether an appropriate consent form is already being developed elsewhere and help ensure you meet DfE data policies.
+
+#### 2\. Follow the DfE user research informed consent principles
+
+Make sure you understand our informed consent principles and how to apply them:  
+[About our principles informed consent principles and how to apply them (opens in a new tab, PowerPoint document)](file:///downloads/informed-consent-principles-beta-jun25.pptx)
+
+Also consult the bank of case studies to read about how other researchers have tailored their approach to consent to meet contextual needs in their research:  
+[Bank of case studies (opens in a new tab, DfE SharePoint users only)](https://educationgovuk.sharepoint.com/:p:/r/sites/lvewp00449/WorkplaceDocuments/2.%20Templates%20and%20resources/Consent%20forms/2.%20Case%20studies%20and%20tools/Bank%20of%20informed%20consent%20case%20studies.pptx?d=wcaa5a8e7261440f9a364446e6e3b55a0&csf=1&web=1&e=eWXIBT)
+
+If you are not sure whether your planned approach meets the principles, get advice from the informed consent working group.
+
+#### 3\. Get approval from research operations
+
+You must send your consent form or approach to research operations for approval before using it.
+
+They will check that it meets our informed consent principles and complies with DfE data policies. If they are not sure, they will refer you to the informed consent working group or to the DfE data protection team.
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</li>
+  <li><a class="govuk-link" href="/community-of-practice/community-initiatives-and-interest-groups#consent-working-group">Informed consent working</li> 
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related content</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <!--<li><a class="govuk-link" href="/guidance/personal-data-26/">How to store and manage personal data</li>-->
+  <li><a class="govuk-link" href="https://dfedigital.blog.gov.uk/2025/07/16/creating-3-principles-of-informed-consent-for-user-research/">Blog post about our DfE user research informed consent principles</li>
+</ul>
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

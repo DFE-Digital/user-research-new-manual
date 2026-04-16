@@ -1,0 +1,110 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "How to ensure user research participants understand and have control over what they're agreeing to" %}
+
+{% set guidanceTopic = "How to gather and store informed consent" %}
+{% set guidancePageName = "Overview" %}
+{% set seoPageName = guidanceTopic %}
+
+{% set pageRoot = "/guidance/informed-consent-26/" %}
+
+{% set nextLinkText = "When to gather consent" %}
+{% set nextLinkURL = pageRoot + "2.html" %}
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Overview
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">When to gather consent</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">When to gather consent from a parent, legal guardian or other third-party</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">Where to find the approved consent forms</a>
+</li>
+<!--<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">How and when to gather verbal consent</a>
+</li>-->
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">How to tailor an approved consent form or create a new one</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}7.html">How to store a record of consent in DfE SharePoint</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}8.html">What to do if a participant withdraws consent</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+You must always gather informed consent from the people you conduct research with. It is important to do this in a way that they understand, to ensure we treat our participants ethically and meet our legal obligations under UK data laws.
+
+Gaining informed consent means making sure that participants:
+
+- receive the right information about your research
+- can understand the information
+- can make an informed decision about their involvement
+
+You must always:
+
+- Gather informed consent from every participant taking part in your research, using a consent form or method that is approved for use in DfE user research
+- Gather informed consent from a parent, guardian or other 3rd party if the participant is unable to give fully informed consent
+- Continue to confirm participants' consent throughout a research session, for example, when you move to another activity or topic of conversation
+- Securely keep a record of their consent
+- Only use their data in the ways they have consented to, including in analysis, playback and sharing data with colleagues
+- If they withdraw their consent later, remove their identifiable data from your research
+
+The guidance on the following pages will help you do this.
+
+### DfE user research informed consent principles
+
+During 2025, the DfE user research community informed consent working group created a set of principles for how we gather informed consent in our research. These were co-designed with user researchers in DfE and other government departments.
+
+The principles are:
+
+- We want research to be fair for everyone. We are aware of power imbalances and try to reduce them in our research.
+- We make sure people can give informed consent in ways that work for them.
+- We check that people understand what they are consenting to and are happy to take part.
+
+More about the principles, and examples of how to apply them in your work:
+
+- [About our principles informed consent principles and how to apply them, including real case studies (opens in a new tab, PowerPoint document)](/downloads/informed-consent-principles-beta-jun25.pptx)
+- [Blog post about how the principles were created](https://dfedigital.blog.gov.uk/2025/07/16/creating-3-principles-of-informed-consent-for-user-research/)
+- [About the informed consent working group](/community-of-practice/community-initiatives-and-interest-groups#consent-working-group)
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</li>
+  <li><a class="govuk-link" href="/community-of-practice/community-initiatives-and-interest-groups#consent-working-group">Informed consent working</li> 
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related content</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <!--<li><a class="govuk-link" href="/guidance/personal-data-26/">How to store and manage personal data</li>-->
+  <li><a class="govuk-link" href="https://dfedigital.blog.gov.uk/2025/07/16/creating-3-principles-of-informed-consent-for-user-research/">Blog post about our DfE user research informed consent principles</li>
+</ul>
+
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+
