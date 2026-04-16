@@ -3,6 +3,7 @@
 {% set pageName = "Department for Education User Research Manual" %}
 {% set pageDescription = "Standards, principles, guidance and support for any user researcher working in Department for Education." %}
 
+{% set isPreElectionPeriod = true %}
 
 
 {% block hero %}
@@ -19,6 +20,25 @@
 {% endblock %}
 
 {% block content %}
+
+{% if isPreElectionPeriod %}
+   <section style="background: #ffffff;">
+      <div class="dfe-width-container">
+         <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+               Important
+            </h2>
+            </div>
+            <div class="govuk-notification-banner__content">
+            <p style="font-weight:bold; max-width:44em;">
+               We are currently in a pre-election period, before the Local Authority, mayoral, Scottish Parliament and Welsh Senedd elections on Thursday May 7 2026. You must follow the <a href="/guidance/pre-election-periods-26/">guidance for conducting user research in DfE during a pre-election period</a>.
+            </p>
+            </div>
+         </div>
+      </div>
+   </section>
+{% endif %}
 
    <section style="background: #ffffff;">
       <div class="dfe-width-container">

@@ -65,6 +65,21 @@
           <main class="govuk-main-wrapper" id="main-content" role="main">
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-two-thirds">
+
+                  {% if isPreElectionPeriod %}
+                    <div style="margin-bottom:20px;" class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                      <div class="govuk-notification-banner__header">
+                      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                        We are currently in a pre-election period
+                      </h2>
+                      </div>
+                      <div class="govuk-notification-banner__content">
+                      <p>Do not conduct any user research without SRO (senior responsible officer) approval.</p>
+                      </div>
+                    </div>
+                  {% endif %}
+
+
                 <a data-module="govuk-skip-link" class="govuk-skip-link govuk-!-display-none-print" href="#guide-contents">Skip contents</a>
                   <nav aria-label="Pages in this guide">
                     <h2 class="govuk-body-s govuk-!-font-weight-regular govuk-!-margin-bottom-2">Contents</h2>
@@ -72,7 +87,7 @@
                       {% block contents %}{% endblock%}
                     </ol>
                   </nav>
-              </div>
+                </div>
 
               <div class="govuk-grid-column-two-thirds govuk-!-padding-top-4" id="guide-contents">
                 <h2 class="govuk-!-margin-bottom-4">{{guidancePageName}}</h2>
