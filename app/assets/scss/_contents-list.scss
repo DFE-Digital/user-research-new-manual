@@ -1,0 +1,113 @@
+@import "govuk_publishing_components/individual_component_support";
+@import "https://github.com/alphagov/govuk_publishing_components/blob/0b06108099ff99b076f50a4f0be45b89669707c4/app/assets/stylesheets/govuk_publishing_components/components/helpers/_contents-list-helper.scss";
+
+.gem-c-contents-list {
+  // Always render the contents list above a
+  // back to contents link
+  position: relative;
+  z-index: 1;
+  background: govuk-colour("white");
+  box-shadow: 0 20px 15px -10px govuk-colour("white");
+}
+
+.gem-c-contents-list__title {
+  margin: 0;
+  @include govuk-text-colour;
+  @include govuk-font($size: 16, $weight: regular, $line-height: 1.5);
+}
+
+.gem-c-contents-list__list,
+.gem-c-contents-list__nested-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  @include govuk-text-colour;
+  @include govuk-font($size: 16);
+}
+
+.gem-c-contents-list__link {
+  @include govuk-template-link-focus-override;
+}
+
+.gem-c-contents-list__list-item--parent > .gem-c-contents-list__link {
+  font-weight: $govuk-font-weight-bold;
+}
+
+.gem-c-contents-list__list-item {
+  padding-top: govuk-spacing(2);
+  line-height: 1.3;
+  list-style-type: none;
+
+  @include govuk-media-query($from: tablet) {
+    padding-top: calc(govuk-spacing(6) / 4);
+  }
+}
+
+.gem-c-contents-list__list-item--dashed {
+  $contents-spacing: govuk-spacing(5);
+  position: relative;
+  padding-left: $contents-spacing;
+  padding-right: $contents-spacing;
+
+  .gem-c-contents-list__list-item-dash::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    width: govuk-spacing(4);
+    overflow: hidden;
+
+    .direction-rtl & {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  // Focus styles on IE8 and older include the
+  // left margin, creating an odd white box with
+  // orange border around the em dash.
+  // Use inline-block and vertical alignment to
+  // fix focus styles
+  //
+  // https://github.com/alphagov/government-frontend/pull/420#issuecomment-320632386
+  .lte-ie8 & .gem-c-contents-list__link {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.gem-c-contents-list--alternative-line-style {
+  .gem-c-contents-list__title {
+    margin-bottom: govuk-spacing(3);
+  }
+
+  .gem-c-contents-list__list-item {
+    padding: govuk-spacing(2) 0;
+    margin: 0;
+  }
+
+  .gem-c-contents-list__list-item-dash::before {
+    display: none;
+  }
+
+  .gem-c-contents-list__list-item--active {
+    padding: govuk-spacing(1) govuk-spacing(2);
+    margin: govuk-spacing(1) 0;
+    border-left: 4px solid govuk-colour("blue");
+    color: govuk-colour("blue");
+    font-weight: $govuk-font-weight-bold;
+  }
+}
+
+@include govuk-media-query($media-type: print) {
+  // Override default browser indentation
+  .gem-c-contents-list__list,
+  .gem-c-contents-list__nested-list {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .gem-c-contents-list__list-item--numbered,
+  .gem-c-contents-list__list-item--parent {
+    list-style-type: none;
+  }
+}
