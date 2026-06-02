@@ -1,0 +1,613 @@
+{% extends "layouts/content-full-width.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set pageName = "Guidance library" %}
+{% set pageDescription = "Guidance and advice about how we plan and deliver user research in DfE." %}
+{% set zeroMainMargin = "true"%}
+
+{% block content %}
+
+{% markdown %}
+
+
+  <script>if ('noModule' in HTMLScriptElement.prototype) { document.body.classList.add('govuk-frontend-supported'); }</script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-D2V3LRNYBJ"></script>
+
+          <form method="POST">
+            <div class="govuk-cookie-banner js-cookie-banner" data-nosnippet="" role="region" aria-label="Cookies on the DesignManual">
+                <div class="govuk-cookie-banner__message govuk-width-container js-cookie-banner-messsage">
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-two-thirds">
+                            <h2 class="govuk-cookie-banner__heading govuk-heading-m">Cookies on the DfE Design Manual</h2>
+                            <div class="govuk-cookie-banner__content">
+                                <p class="govuk-body">We’d like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="govuk-button-group">
+                        <button value="accept" type="submit" name="cookies" class="govuk-button js-cookie-banner-accept" data-module="govuk-button">Accept analytics cookies</button>
+                        <button value="reject" type="submit" name="cookies" class="govuk-button js-cookie-banner-reject" data-module="govuk-button">Reject analytics cookies</button>
+                        <a class="govuk-link govuk-link--no-visited-state" href="/cookie-policy">View cookies</a>
+                    </div>
+                </div>
+                <div class="govuk-cookie-banner__message govuk-width-container js-cookie-banner-confirmation-accept" role="alert" hidden="">
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-two-thirds">
+                            <div class="govuk-cookie-banner__content">
+                                <p class="govuk-body">You’ve accepted analytics cookies. You can <a class="govuk-link govuk-link--no-visited-state" href="/cookie-policy">change your cookie settings</a> at any time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="govuk-button-group">
+                        <a href="#0" role="button" draggable="false" class="govuk-button js-cookie-banner-hide" data-module="govuk-button">Hide cookie message</a>
+                    </div>
+                </div>
+                <div class="govuk-cookie-banner__message govuk-width-container js-cookie-banner-confirmation-reject" role="alert" hidden="">
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-two-thirds">
+                            <div class="govuk-cookie-banner__content">
+                                <p class="govuk-body">You’ve rejected analytics cookies. You can <a class="govuk-link govuk-link--no-visited-state" href="/cookie-policy">change your cookie settings</a> at any time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="govuk-button-group">
+                        <a href="#0" role="button" draggable="false" class="govuk-button js-cookie-banner-hide" data-module="govuk-button">Hide cookie message</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+  <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+  <nav class="dfe-topnav" name="Other services navigation">
+    <div class="govuk-width-container">
+        <div class="flex-nav">
+            <ul class="flex-left">
+                <li>
+                    <a href="#services" id="services-tab">Manuals and services</a>
+                </li>
+            </ul>
+            <ul class="flex-right">
+                <li>
+                    <a href="https://github.com/orgs/DFE-Digital/projects/22" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="/design-system/dfe-frontend">DfE Frontend</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <div class="dfe-services-panel" id="services-panel" style="display: none;" aria-hidden="true">
+    <div class="govuk-width-container">
+        <div class="govuk-!-padding-top-5 govuk-!-padding-bottom-0">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-third">
+                    <h2 class="govuk-heading-m">Other manuals</h2>
+                    <ul class="govuk-list govuk-list--spaced">
+                       <li>
+                            <a href="https://accessibility.education.gov.uk" class="govuk-link govuk-link--no-visited-state">Accessibility manual</a>
+                        </li>
+                        <li>
+                            <a href="https://design.education.gov.uk" class="govuk-link govuk-link--no-visited-state">Design manual</a>
+                        </li>
+                        <li>
+                            <a href="https://user-research.education.gov.uk" class="govuk-link govuk-link--no-visited-state">User research manual</a>
+                        </li>
+                        <li>
+                            <a href="https://technical-guidance.education.gov.uk" class="govuk-link govuk-link--no-visited-state">Technical manual</a>
+                        </li>
+                        <li>
+                            <a href="https://dfe-digital.github.io/architecture/#dfe-architecture" class="govuk-link govuk-link--no-visited-state">Architecture manual</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="govuk-grid-column-one-third">
+                    <h2 class="govuk-heading-m">Standards and assurance</h2>
+                    <ul class="govuk-list govuk-list--spaced">
+                        <li>
+                            <a href="https://apply-the-service-standard.education.gov.uk" class="govuk-link govuk-link--no-visited-state">Apply the Service Standard</a>
+                        </li>
+                        <li>
+                            <a href="https://standards.education.gov.uk" class="govuk-link govuk-link--no-visited-state">Standards manual</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="govuk-grid-column-one-third">
+                    <h2 class="govuk-heading-m">Working in DfE</h2>
+                    <ul class="govuk-list govuk-list--spaced">
+                        <li>
+                            <a href="https://design-histories.education.gov.uk" class="govuk-link govuk-link--no-visited-state">Design histories</a>
+                        </li>   
+                        <li>
+                            <a href="https://job-descriptions.education.gov.uk" class="govuk-link govuk-link--no-visited-state">Job descriptions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="govuk-grid-column-full">
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+                    <p>
+                        <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> <a href="#closeNav" id="closeNav" class="govuk-link">Close this menu</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  
+
+
+
+
+
+
+
+<header class="dfe-header" role="banner">
+  <div class="dfe-width-container dfe-header__container">
+    <div class="dfe-header__logo">
+      <a class="dfe-header__link" href="/" aria-label="DfE homepage">
+        
+<img src="/assets/images/dfe-logo.png" class="dfe-logo" alt="">
+<img src="/assets/images/dfe-logo-alt.png" class="dfe-logo-hover" alt="">
+
+      </a>
+    </div>
+    <div class="dfe-header__content" id="content-header">
+      
+
+        
+          <div class="dfe-header__menu">
+            <button class="dfe-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+          </div>
+          
+
+          
+            <div class="dfe-header__search">
+              <button class="dfe-header__search-toggle" id="toggle-search" aria-controls="search" aria-label="Open search">
+                <svg class="dfe-icon dfe-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+                  <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+                </svg>
+                <span class="govuk-visually-hidden">Search</span>
+              </button>
+              <div class="dfe-header__search-wrap" id="wrap-search">
+                <form class="dfe-header__search-form" id="search" action="/search" method="get" role="search">
+                  <label class="govuk-visually-hidden" for="search-field">Search this website</label>
+                  <input class="dfe-search__input" id="search-field" name="searchterm" type="search" placeholder="Search" autocomplete="off">
+                  <button class="dfe-search__submit" type="submit">
+                    <svg class="dfe-icon dfe-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+                      <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+                    </svg>
+                    <span class="govuk-visually-hidden">Search</span>
+                  </button>
+                  <button class="dfe-search__close" id="close-search">
+                    <svg class="dfe-icon dfe-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+                      <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+                    </svg>
+                    <span class="govuk-visually-hidden">Close search</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+          <div class="dfe-width-container dfe-header__service-name">
+            <a href="/" class="dfe-header__link--service">User research manual</a>
+          </div>
+
+        
+        
+          <nav class="dfe-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+            <div class="dfe-width-container">
+              <p class="dfe-header__navigation-title">
+                <span id="label-navigation">Menu</span>
+                <button class="dfe-header__navigation-close" id="close-menu">
+                  <svg class="dfe-icon dfe-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+                    <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+                  </svg>
+                  <span class="govuk-visually-hidden">Close menu</span>
+                </button>
+              </p>
+              <ul class="dfe-header__navigation-list">
+                  <li class="dfe-header__navigation-item ">
+                    <a class="dfe-header__navigation-link" href="/">
+                      Home
+                      <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="dfe-header__navigation-item ">
+                    <a class="dfe-header__navigation-link" href="/standards">
+                      Standards
+                      <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="dfe-header__navigation-item ">
+                    <a class="dfe-header__navigation-link" href="/design-system">Guidance<svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="dfe-header__navigation-item dfe-header__navigation-item--current">
+                    <a class="dfe-header__navigation-link" href="/design-ops">Community<svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  
+                  <li class="dfe-header__navigation-item ">
+                    <a class="dfe-header__navigation-link" href="/our-work">
+                      Our work
+                      <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="dfe-header__navigation-item ">
+                    <a class="dfe-header__navigation-link" href="/tools">
+                      Tools
+                      <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                      </svg>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        
+    
+  
+</header>
+
+
+  
+
+
+
+  
+<section class="dfe-page-header dfe-page-header--with-sub-nav">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl  govuk-!-margin-top-5">Our user research community</h1>
+        <p class="govuk-body-l govuk-!-margin-bottom-6">Our people, community meetups and groups</p>
+        <nav class="app-sub-navigation" aria-label="Application menu">
+          <ul class="app-sub-navigation__list">
+            <li class="app-sub-navigation__item">
+              <a class="app-sub-navigation__link" aria-current="page" href="/design-ops">Overview</a>
+            </li>
+            
+            <li class="app-sub-navigation__item">
+              <a class="app-sub-navigation__link" href="/design-ops/priorities">Research Ops</a>
+            </li>
+            <li class="app-sub-navigation__item">
+              <a class="app-sub-navigation__link" href="/design-ops/professions">Community meetups</a>
+            </li><li class="app-sub-navigation__item">
+              <a class="app-sub-navigation__link" href="/design-ops/maturity">Initiatives and working groups</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   
+
+  
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    
+
+
+<section>
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+        <section class="dfe-width-container" style="padding: 0px 0px 0px 0px; margin:0 0 40px 0;">
+<div class="govuk-!-margin-top-0" style="background: #e6f0f5;">
+  <div class="dfe-width-container" style="padding: 20px 40px;">
+     <div class="govuk-grid-row">
+           <h2 class="govuk-heading-l govuk-!-margin-bottom-3">
+              <img src="	https://user-research.education.gov.uk/assets/images/user-research-mission-patch.png" style="float:right; width:200px; rotate: 10deg;" alt="Badge showing an otter with a magnifying glass, surrounded by the words 'Department for Education User Research Community'">
+              Our UR community principles for delivering great user research
+          </h2>
+          <p>Together we created a set of principles describing how we deliver our best work as DfE user researchers.</p>
+          <p>These principles are:</p>
+          <ol class="dfe-list--number" style="padding-left:30px">
+            <li>We include all of our users, and bring them to the heart of the department’s work</li>
+            <li>We are objective and use evidence</li>
+            <li>We do high quality, safe and ethical research</li>
+            <li>We are adaptable and collaborative, and focus our research in the right places</li>
+            <li>We learn as a community and by ourselves</li>
+            <li>We celebrate our work, and help others understand what we do</li>
+          </ol>
+          <p><a href="/community-of-practice/principles.html">Read more about our principles, what they mean, and how we apply them.</a></p>
+          <p>We used these principles to design our mission patch sticker, which shows an otter looking for insights. Like us, otters are collaborative, adaptable, and effective as individuals with a strong sense of community.</p>
+          <p><a href="/community-of-practice/community-meetups.html#meet-our-community-organisers">Get a mission patch laptop sticker from your local UR community lead</a>.
+     </p></div>
+  </div>
+</div>
+</section>
+
+        
+
+        <p>When you join DfE, you're joining a friendly group of passionate professionals, who want to deliver great research for our teams, and make a real difference to the users of DfE services and policies. It's our <a href="/community-of-practice/how-were-developing-ur-at-dfe.html">goal to make Department for Education the best place in government to be a user researcher</a> and our active and supportive community of practice is a big part of that.</p>
+
+
+
+        <p>We regularly come together in <a href="/community-of-practice/community-meetups.html">community of practice meetups</a>, have active and friendly <a href="/community-of-practice/ur-slack-channels.html">Slack channels</a>, and various <a href="/community-of-practice/community-initiatives-and-interest-groups.html">community initiatives, working groups and interest groups</a> to get involved in.</p><h3 id="find-a-dfe-user-researcher">Find a DfE user researcher</h3><p>We keep a <a href="https://educationgovuk.sharepoint.com/:x:/s/lvewp00449/EY0A_SUa4RRAl6LBM1-0w-EBQywbIhvEy8m0uaQ0ZPO_kQ?e=CyR6sB">list of all user researchers currently working in the Department (DfE SharePoint users only)</a>.</p>
+
+
+        
+        
+
+        
+
+
+        
+
+        
+
+        
+
+
+
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <aside class="dfe-aside ">
+
+          <h2 class="govuk-heading-l">The leadership team</h2>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Tom Adams</h3>
+          <p>Head of Profession for User Research</p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Annaliese Lamb</h3>
+          <p>Lead user researcher</p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Charly Dalby</h3>
+          <p>Lead user researcher, Data Engineering</p>
+
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Ella Beaumont</h3><p>Lead user researcher, Early Years</p><h3 class="govuk-heading-s govuk-!-margin-bottom-0">Kathryn King</h3><p>Lead user researcher, Schools services</p><h3 class="govuk-heading-s govuk-!-margin-bottom-0">Will Finn</h3><p>Lead user researcher, Teacher services</p><h2 class="govuk-heading-l">Talk to us</h2>
+
+          <p>Search for our names on DfE slack and we will be more than happy to help.</p><h3 class="govuk-heading-s govuk-!-margin-bottom-0">Talk to Research Ops</h3>
+          <p style="
+    margin-bottom: 6px;
+"><a href="mailto:design.ops@education.gov.uk">research.ops@education.gov.uk</a></p>
+
+          <p><a class="govuk-link govuk-link--no-visited-state" href="slack://ukgovernmentdigital.slack.com/archives/C04GXQ0320Z" target="_blank">#research-ops-support</a></p><h3 class="govuk-heading-s govuk-!-margin-bottom-0">User research community on DfE Slack</h3>
+          <p> <a class="govuk-link govuk-link--no-visited-state" href="slack://ukgovernmentdfe.slack.com/archives/C0432A8JSV7" target="_blank">#user_research</a></p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Cross-GOV Slack</h3>
+          <p><a class="govuk-link govuk-link--no-visited-state" href="slack://ukgovernmentdigital.slack.com/archives/C04GXQ0320Z" target="_blank">#user-research</a></p>
+
+        </aside>
+      </div>
+    </div>
+</div></section>
+
+
+  </main>
+  
+
+  
+  <section>
+    <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <div class="dfe-feedback-banner">
+                    <div class="dfe-feedback-banner--content">
+                        <h2 class="govuk-heading-s">We've made some changes, and we'd like your feedback to make this
+                            service better.</h2>
+                        <form id="feedbackForm" action="/form-response/helpful" method="post">
+                            <div class="dfe-feedback-banner--content-questions">
+                                <div class="dfe-feedback-banner--content-question" id="questionForm">
+                                    <h2 class="govuk-heading-s dfe-feedback-banner--content-question-text">Is this page
+                                        useful?</h2>
+                                    <div class="govuk-button-group">
+                                        <button type="button" class="govuk-button govuk-button--secondary" value="Yes" data-module="govuk-button" onclick="submitFeedback('Yes')">Yes</button>
+                                        <button type="button" class="govuk-button govuk-button--secondary" value="No" data-module="govuk-button" onclick="submitFeedback('No')">No</button>
+                                    </div>
+                                </div>
+                                <div class="dfe-feedback-banner--content-message" id="thanksMessage" role="status" hidden="">Thank you
+                                    for your feedback</div>
+                                <div class="dfe-feedback-banner--content-problem" id="problemButton">
+                                    <button type="button" class="govuk-button govuk-button--secondary" data-module="govuk-button">Give feedback about this page</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="dfe-feedback-panel" id="feedback-panel" style="display: none;" aria-hidden="true">
+                            <form id="feedback-form">
+
+                                <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                                    <div class="govuk-form-group">
+                                        <h3 class="govuk-label-wrapper">
+                                            <label class="govuk-label govuk-label--m" for="feedback_form_input">
+                                                Can you provide more detail?
+                                            </label>
+                                        </h3>
+                                        <textarea class="govuk-textarea govuk-js-character-count" id="feedback_form_input" name="feedback_form_input" rows="5" aria-describedby="feedback_form_input"></textarea><div id="feedback_form_input-info" class="govuk-hint govuk-character-count__message govuk-visually-hidden">You can enter up to 200
+                                            characters</div><div class="govuk-hint govuk-character-count__message govuk-character-count__status" aria-hidden="true">You have 200 characters remaining</div><div class="govuk-character-count__sr-status govuk-visually-hidden" aria-live="polite">You have 200 characters remaining</div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="govuk-button-group">
+                                    <button class="govuk-button" data-module="govuk-button" type="submit">Submit</button>
+                                    <button class="govuk-button govuk-button--secondary" type="button" data-module="govuk-button" id="cancelButton">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const problemButton = document.getElementById('problemButton').querySelector('button');
+        const cancelButton = document.getElementById('cancelButton');
+
+        problemButton.addEventListener('click', function () {
+            document.getElementById('feedback-panel').style.display = 'block';
+            document.getElementById('questionForm').style.display = 'none';
+            problemButton.style.display = 'none';
+        });
+
+        cancelButton.addEventListener('click', function () {
+            document.getElementById('feedback-panel').style.display = 'none';
+            document.getElementById('questionForm').style.display = 'flex'; // Change this to the original display style of questionForm
+            problemButton.style.display = 'block'; // Show the problemButton again
+            document.getElementById('thanksMessage').hidden = true; // Hide the thanksMessage if it was showing
+        });
+
+        document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+        });
+
+        document.getElementById('feedback-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const feedback = document.getElementById('feedback_form_input').value;
+            submitDetailedFeedback(feedback);
+        });
+    });
+
+    function submitFeedback(response, endpoint = 'helpful') {
+        fetch(`/form-response/${endpoint}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            body: JSON.stringify({ response: response }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                document.getElementById('thanksMessage').hidden = false;
+                if (endpoint === 'helpful') {
+                    document.getElementById('questionForm').style.display = 'none';
+                } else {
+                    document.getElementById('feedback-panel').style.display = 'none';
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+
+    function submitDetailedFeedback(feedback) {
+        submitFeedback(feedback, 'feedback');
+    }
+
+</script>
+<footer class="govuk-footer">
+  <div class="govuk-width-container">
+    
+      <div class="govuk-footer__navigation">
+        
+          <div class="govuk-footer__section govuk-grid-column-two-thirds">
+            <h2 class="govuk-footer__heading govuk-heading-m">Site information</h2>
+            
+              
+              <ul class="govuk-footer__list govuk-footer__list--columns-2">
+                
+                  
+                    <li class="govuk-footer__list-item">
+                      <a class="govuk-footer__link" href="https://github.com/DFE-Digital/design/issues/28">
+                        GitHub issue 28
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="govuk-footer__list-item">
+                      <a class="govuk-footer__link" href="/accessibility-statement">
+                        Accessibility statement
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="govuk-footer__list-item">
+                      <a class="govuk-footer__link" href="/design-ops">
+                        Contact DesignOps
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="govuk-footer__list-item">
+                      <a class="govuk-footer__link" href="/cookie-policy">
+                        Cookie policy
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="govuk-footer__list-item">
+                      <a class="govuk-footer__link" href="https://github.com/DFE-Digital/design">
+                        GitHub source code
+                      </a>
+                    </li>
+                  
+                
+              </ul>
+            
+          </div>
+        
+      </div>
+      <hr class="govuk-footer__section-break">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+        <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+          <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"></path>
+        </svg>
+        <span class="govuk-footer__licence-description">
+        
+          All content is available under the
+          <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+        
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
+        
+          © Crown copyright
+        
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+  <script src="/assets/js/cookies.min.js"></script>
+  <script src="/assets/js/feedback.min.js"></script>
+  <script src="/assets/js/dfefrontend.min.js"></script>
+  <script src="/assets/js/ncs.min.js"></script>
+  
+  <script type="module" src="/assets/js/govuk-frontend.min.min.js"></script>
+  <script type="module">
+    import { initAll } from '/assets/js/govuk-frontend.min.min.js';
+    initAll();
+  </script>
+
+{% endmarkdown%}
+
+{% endblock %}
